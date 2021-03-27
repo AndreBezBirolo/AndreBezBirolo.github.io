@@ -4,10 +4,13 @@
   padding: 0 15px;
 }
 img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .flex {
   display: -webkit-box;
