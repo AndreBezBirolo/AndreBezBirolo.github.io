@@ -74,6 +74,11 @@ body {
 #primary-header .menu-container {
   height: 48px;
 }
+@media (max-width: 1024px) {
+  #primary-header .menu-container {
+    display: none;
+  }
+}
 #primary-header .menu-container .menu,
 #primary-header .menu-container .menu:before,
 #primary-header .menu-container .menu:after {
