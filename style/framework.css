@@ -3,6 +3,12 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,4 +73,21 @@
   fill: var(--color-p);
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+}
+
+.button-primary {
+  display: inline-block;
+  padding: 16px 36px;
+  text-decoration: none;
+  background: var(--color-s);
+  border-radius: 8px;
+  color: var(--color-white);
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 3rem;
+  -webkit-font-feature-settings: "liga" off;
+  font-feature-settings: "liga" off;
+}
+.button-primary:hover {
+  background: var(--color-s-dark);
 }
