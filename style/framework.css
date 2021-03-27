@@ -1,3 +1,8 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,6 +34,11 @@
   -ms-flex-pack: center;
   justify-content: center;
 }
+.end-x-row {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
 .transition {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -41,4 +51,20 @@
 }
 .txt-center {
   text-align: center;
+}
+@media (max-width: 1024px) {
+  .hide-from-tablet {
+    display: none;
+  }
+}
+.svg-stroke-text {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  stroke: var(--color-text);
+}
+
+.svg-fill-p {
+  fill: var(--color-p);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
