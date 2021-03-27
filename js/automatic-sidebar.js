@@ -28,7 +28,6 @@
         content = container.querySelector('[data-sidebar="content"]'),
         direction = container.dataset.sidebarDirection || 'right',
         width = content.offsetWidth;
-        console.log(content, direction)
       toggleDirection(container, direction, content, width, 'closed');
       button.addEventListener('click', function () {
         if (button.dataset.sidebar === 'open') toggleDirection(container, direction, content, width, 'opened');
