@@ -74,7 +74,7 @@ body {
 #primary-header .menu-container {
   height: 48px;
 }
-@media (max-width: 1024px) {
+@media (min-width: 1023px) {
   #primary-header .menu-container {
     display: none;
   }
