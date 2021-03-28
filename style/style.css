@@ -2,6 +2,7 @@
 :root {
   --color-white: #fff;
   --color-text: #18191f;
+  --color-gray-light: #f4f5f7;
 
   --color-p: #388e3c;
   --color-p-light: #98ee99;
@@ -267,15 +268,50 @@ body {
 }
 /* Principles section */
 #principles {
-  margin: 120px auto;
+  margin: 120px auto 60px auto;
 }
-#principles .title {
+#principles > .title {
   font-weight: 800;
   font-size: var(--font-size-title-h2);
   line-height: var(--line-height-title-h2);
   -webkit-font-feature-settings: "liga" off;
   font-feature-settings: "liga" off;
+  margin-bottom: 40px;
 }
+#principles .item-principle {
+  padding: 16px 24px;
+  min-width: 100%;
+}
+@media (min-width: 599px) {
+  #principles .item-principle {
+    margin-right: 15px;
+    min-width: calc((100% / 4) - 30px);
+  }
+}
+#principles .item-principle .container-image {
+  background-color: var(--color-gray-light);
+  border-radius: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 25px;
+  margin-bottom: 16px;
+}
+#principles .item-principle > .title {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  -webkit-font-feature-settings: "liga" off;
+  font-feature-settings: "liga" off;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+#principles .item-principle > .description {
+  line-height: 2.6rem;
+  -webkit-font-feature-settings: "liga" off;
+  font-feature-settings: "liga" off;
+  color: var(--color-text);
+}
+
 /* Animations */
 @-webkit-keyframes dash {
   to {
