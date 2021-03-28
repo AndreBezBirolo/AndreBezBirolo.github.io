@@ -278,10 +278,12 @@ body {
 }
 /* Principles section */
 #principles,
-#trajectory {
+#trajectory,
+#starting {
   margin: 120px auto 60px auto;
 }
-#principles > .title {
+#principles > .title,
+#starting > .title {
   font-weight: 800;
   font-size: var(--font-size-title-h2);
   line-height: var(--line-height-title-h2);
@@ -313,14 +315,12 @@ body {
   line-height: 2.8rem;
   -webkit-font-feature-settings: "liga" off;
   font-feature-settings: "liga" off;
-  color: var(--color-text);
   margin-bottom: 4px;
 }
 #principles .item-principle > .description {
   line-height: 2.6rem;
   -webkit-font-feature-settings: "liga" off;
   font-feature-settings: "liga" off;
-  color: var(--color-text);
 }
 /* Section trajectory */
 #trajectory .container-image {
@@ -397,7 +397,6 @@ body {
   line-height: var(--line-height-title-h2-sub);
   -webkit-font-feature-settings: "liga" off;
   font-feature-settings: "liga" off;
-  color: var(--color-text);
   margin-bottom: 32px;
 }
 #trajectory .container-content .description {
@@ -405,7 +404,6 @@ body {
   line-height: 3.2rem;
   -webkit-font-feature-settings: "liga" off;
   font-feature-settings: "liga" off;
-  color: var(--color-text);
   margin-bottom: 32px;
 }
 #trajectory .container-content .go-to-page {
@@ -425,8 +423,9 @@ body {
 }
 @media (max-width: 768px) {
   #principles,
-  #trajectory {
-    margin: 60px auto 60px auto;
+  #trajectory,
+  #starting {
+    margin: 60px auto;
   }
   #trajectory {
     -webkit-box-orient: vertical;
@@ -440,7 +439,6 @@ body {
   }
   #trajectory .container-content {
     width: 100%;
-
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -468,6 +466,48 @@ body {
     width: 70%;
   }
 }
+/*  Starting section  */
+#starting .starting-list .starting-item {
+  width: calc((100% / 3) - 30px);
+}
+
+#starting .starting-list .starting-item:not(:last-child) {
+  margin: 0 30px 0 0;
+}
+#starting .starting-list .starting-item .primary-content .image {
+  margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  #starting .starting-list .starting-item {
+    width: calc((100% / 2) - 60px);
+  }
+  #starting .starting-list .starting-item {
+    margin: 30px;
+  }
+}
+@media (max-width: 520px) {
+  #starting .starting-list .starting-item {
+    width: calc((100%) - 30px);
+  }
+  #starting .starting-list div.starting-item {
+    margin: 15px !important;
+  }
+}
+#starting .starting-list .starting-item .primary-content .title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  -webkit-font-feature-settings: "liga" off;
+  font-feature-settings: "liga" off;
+  margin-bottom: 4px;
+}
+#starting .starting-list .starting-item .description {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-font-feature-settings: "liga" off;
+  font-feature-settings: "liga" off;
+}
+
 /* Animations */
 @-webkit-keyframes dash {
   to {
