@@ -33,8 +33,18 @@
 
   --font-size-description: 1.8rem;
   --line-height-description: 3.2rem;
-}
 
+  --selection-color: var(--color-text);
+  --selection-background: var(--color-s-light);
+}
+::-moz-selection {
+  color: var(--selection-color);
+  background: var(--selection-background);
+}
+::selection {
+  color: var(--selection-color);
+  background: var(--selection-background);
+}
 * {
   outline-width: 2px;
   outline-color: var(--color-s-dark);
@@ -167,6 +177,49 @@ body {
   -webkit-font-feature-settings: "liga" off;
   font-feature-settings: "liga" off;
   margin-bottom: 16px;
+}
+#introdutory .title::after {
+  content: "|";
+  -webkit-animation: blink 0.75s infinite;
+  animation: blink 0.75s infinite;
+}
+@-webkit-keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@media (min-width: 1029px) {
+  #introdutory .title {
+    min-height: 196px;
+  }
+}
+@media (max-width: 1280px) {
+  #introdutory .title {
+    min-height: 130px;
+  }
+}
+@media (max-width: 1024px) {
+  #introdutory .title {
+    min-height: 105px;
+  }
+}
+@media (max-width: 768px) {
+  #introdutory .title {
+    min-height: 76px;
+  }
 }
 #introdutory .description {
   font-size: var(--font-size-description);
