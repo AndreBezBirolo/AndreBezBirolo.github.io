@@ -194,8 +194,7 @@ body {
 }
 #introdutory .title::after {
   content: "|";
-  -webkit-animation: blink 0.75s infinite;
-  animation: blink 0.75s infinite;
+  /* animation: blink 0.75s infinite; */
 }
 @-webkit-keyframes blink {
   0%,
@@ -250,16 +249,28 @@ body {
 /* Principles section */
 #principles,
 #trajectory,
-#starting {
+#starting,
+#tools,
+#feedback {
   margin: 120px auto 60px auto;
 }
 #principles > .title,
-#starting > .title {
+#starting > .title,
+#tools > .title,
+#feedback > .title {
   font-weight: 800;
   font-size: var(--font-size-title-h2);
   line-height: var(--line-height-title-h2);
   -webkit-font-feature-settings: "liga" off;
   font-feature-settings: "liga" off;
+  margin-bottom: 40px;
+}
+#feedback > .title {
+  margin-bottom: 8px;
+}
+#feedback > .subtitle {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
   margin-bottom: 40px;
 }
 #principles .item-principle {
@@ -371,7 +382,89 @@ body {
   -webkit-font-feature-settings: "liga" off;
   font-feature-settings: "liga" off;
 }
+/*  Section tools  */
+#tools .tools-list {
+  margin-bottom: 32px;
+}
+#tools .tools-list .tool-item .image {
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(24, 39, 75, 0.08);
+}
 
+/* Section feedback */
+#feedback .feedback-list .feedback-item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#feedback .feedback-list .feedback-item:nth-child(2) {
+  margin: 0 30px;
+}
+#feedback .feedback-list .feedback-item .content {
+  box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+  background: var(--color-gray-light);
+  border-radius: 10px;
+  padding: 40px;
+  position: relative;
+  margin-bottom: 30px;
+  height: 100%;
+}
+#feedback .feedback-list .feedback-item .content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: -15px;
+  position: absolute;
+  left: calc(50% - 12px);
+  border-style: solid;
+  border-width: 16px 12px 0 12px;
+  border-color: var(--color-gray-light) transparent transparent transparent;
+}
+#feedback .feedback-list .feedback-item .content .title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin-bottom: 8px;
+}
+#feedback .feedback-list .feedback-item .content .description {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+#feedback .feedback-list .feedback-item .person-info .image {
+  object-fit: unset;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 8px;
+}
+#feedback .feedback-list .feedback-item .person-info .title {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+#feedback .feedback-list .feedback-item .person-info .subtitle {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+  color: #474a57;
+}
+@media (max-width: 1024px) {
+  #feedback .feedback-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  #feedback .feedback-list .feedback-item:nth-child(2),
+  #feedback .feedback-list .feedback-item {
+    margin: 0 0 15px 0;
+  }
+}
 /* Animations */
 @-webkit-keyframes dash {
   to {
