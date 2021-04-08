@@ -26,6 +26,10 @@
   }
 }
 @media (min-width: 1023px) {
+  #primary-header #primary-navigation,
+  #primary-header .menu-social-list {
+    width: 30%;
+  }
   #primary-header .logo {
     width: 40%;
   }
