@@ -200,5 +200,6 @@
   }
   #trajectory .container-image .primary-image {
     width: 70%;
+    height: auto;
   }
 }
