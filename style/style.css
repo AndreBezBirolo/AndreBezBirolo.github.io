@@ -198,7 +198,8 @@ body {
 }
 #introdutory .title::after {
   content: "|";
-  /* animation: blink 0.75s infinite; */
+  -webkit-animation: blink 0.75s infinite;
+  animation: blink 0.75s infinite;
 }
 @-webkit-keyframes blink {
   0%,
@@ -374,7 +375,7 @@ body {
   margin: 0 30px 0 0;
 }
 #starting .starting-list .starting-item .primary-content .image {
-  margin-bottom: 16px;
+  margin: 0 auto 16px auto;
 }
 #starting .starting-list .starting-item .primary-content .title {
   font-weight: 600;
@@ -543,7 +544,25 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    text-align: center;
   }
+}
+/*  back to top */
+.back-to-top {
+  position: fixed;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 70px, 0);
+  transform: translate3d(0, 70px, 0);
+  bottom: 20px;
+  right: 20px;
+}
+.back-to-top.visible {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.back-to-top:hover path {
+  fill: var(--color-p-dark);
 }
 /* Animations */
 @-webkit-keyframes dash {
