@@ -107,8 +107,6 @@ body {
   padding: 12px 12px 12px 0;
   font-size: 1.4rem;
   line-height: 2rem;
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   color: var(--color-text);
   text-decoration: none;
 }
@@ -187,13 +185,13 @@ body {
 #introdutory .container-img {
   width: 50%;
 }
-
+#introdutory .container-img .photo {
+  border-radius: 50%;
+}
 #introdutory .title {
   font-weight: 800;
   font-size: var(--font-size-title-h1);
   line-height: var(--line-height-title-h1);
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   margin-bottom: 16px;
 }
 #introdutory .title::after {
@@ -242,8 +240,6 @@ body {
 #introdutory .description {
   font-size: var(--font-size-description);
   line-height: 3.2rem;
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   margin-bottom: 32px;
 }
 #introdutory .container-img {
@@ -270,8 +266,6 @@ body {
   font-weight: 800;
   font-size: var(--font-size-title-h2);
   line-height: var(--line-height-title-h2);
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   margin-bottom: 40px;
 }
 #feedback > .title {
@@ -299,14 +293,10 @@ body {
 #principles .item-principle > .title {
   font-size: 1.8rem;
   line-height: 2.8rem;
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   margin-bottom: 4px;
 }
 #principles .item-principle > .description {
   line-height: 2.6rem;
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
 }
 /* Section trajectory */
 #trajectory .container-image {
@@ -332,30 +322,22 @@ body {
   line-height: 1.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   color: var(--color-p-dark);
   margin-bottom: 8px;
 }
 #trajectory .container-content .title {
   font-size: var(--font-size-title-h2-sub);
   line-height: var(--line-height-title-h2-sub);
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   margin-bottom: 32px;
 }
 #trajectory .container-content .description {
   font-size: 1.8rem;
   line-height: 3.2rem;
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   margin-bottom: 32px;
 }
 #trajectory .container-content .go-to-page {
   font-size: 2rem;
   line-height: 3rem;
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   color: var(--color-p);
   text-decoration: none;
 }
@@ -381,15 +363,11 @@ body {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 3.2rem;
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
   margin-bottom: 4px;
 }
 #starting .starting-list .starting-item .description {
   font-size: 1.6rem;
   line-height: 2.6rem;
-  -webkit-font-feature-settings: "liga" off;
-  font-feature-settings: "liga" off;
 }
 /*  Section tools  */
 #tools .tools-list {
