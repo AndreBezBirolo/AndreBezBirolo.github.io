@@ -1,6 +1,6 @@
-const debounce = function(func, wait, immediate) {
+const debounce = function (func, wait, immediate) {
   let timeout;
-  return function(...args) {
+  return function (...args) {
     const context = this;
     const later = function () {
       timeout = null;
@@ -12,14 +12,14 @@ const debounce = function(func, wait, immediate) {
     if (callNow) func.apply(context, args);
   };
 };
-const typeWriter = function(element) {
+const typeWriter = function (element) {
   const textToAnime = element.innerText.split('');
   element.innerText = '';
   textToAnime.forEach((letter, i) => {
     setTimeout(() => element.innerText += letter, 75 * i);
   });
 }
-const automaticSidebar = function() {
+const automaticSidebar = function () {
   function toggleDirection(container, direction, content, width, status) {
     if (status === 'closed') {
       if (direction === 'right') content.style.right = "-" + width + "px";
@@ -59,7 +59,7 @@ try {
   console.log('Veja o erro abaixo e vá arrumar.');
   console.log(e.message)
 }
-const fixedMenu = function() {
+const fixedMenu = function () {
   const header = document.getElementById('primary-header');
   var scrollY = window.scrollY;
   window.addEventListener('scroll', debounce(() => {
@@ -67,21 +67,21 @@ const fixedMenu = function() {
     if (scrollY > 0) {
       header.classList.add('fixed');
     } else {
-        if(header.classList.contains('fixed')){
-          header.classList.remove('fixed');
-        }
+      if (header.classList.contains('fixed')) {
+        header.classList.remove('fixed');
       }
-    }), 200);
+    }
+  }), 200);
   if (scrollY > 0) {
     header.classList.add('fixed');
-  } 
+  }
 }
 
 function lazyLoadImg() {
   if ("IntersectionObserver" in window) {
     let lazyImages = Array.prototype.slice.call(document.querySelectorAll("img.lazy"));
-    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
+    let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           let lazyImage = entry.target;
           lazyImage.src = lazyImage.dataset.src;
@@ -91,7 +91,7 @@ function lazyLoadImg() {
         }
       });
     });
-    lazyImages.forEach(function(lazyImage) {
+    lazyImages.forEach(function (lazyImage) {
       lazyImageObserver.observe(lazyImage);
     });
   } else {
@@ -141,4 +141,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   backToTop();
 
+  let form = document.querySelector('.pageclip-form')
+  Pageclip.form(form, {
+    successTemplate: '<span>Obrigado pelo contato!</span>'
+  })
 });
