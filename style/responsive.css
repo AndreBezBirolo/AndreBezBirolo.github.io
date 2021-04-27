@@ -91,6 +91,7 @@
     text-align: center;
   }
 }
+
 @media (min-width: 799px) {
   #introdutory .container-img:before {
     content: url("/media/introdutory/introdutory-1.png");
@@ -161,12 +162,19 @@
     height: 350px;
   }
 }
-@media (min-width: 599px) {
+@media (min-width: 500px) {
   #principles .item-principle {
-    margin-right: 15px;
-    min-width: calc((100% / 4) - 30px);
+    margin-right: 10px;
+    max-width: calc((100% / 2) - 20px);
   }
 }
+@media (min-width: 850px) {
+  #principles .item-principle {
+    margin-right: 15px;
+    max-width: calc((100% / 4) - 30px);
+  }
+}
+
 @media (max-width: 520px) {
   #starting .starting-list .starting-item {
     width: calc((100%) - 30px);
