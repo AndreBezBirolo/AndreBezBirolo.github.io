@@ -34,6 +34,7 @@ const automaticSidebar = function () {
     }
   }
   let buttons = document.querySelectorAll('[data-sidebar="open"],[data-sidebar="close"]');
+  let menuItens = document.querySelectorAll('[data-sidebar="container"] .navigation-mobile a');
   buttons.forEach(function (button) {
     let target = button.dataset.sidebarTarget,
       container = document.querySelector('#' + target),
@@ -50,7 +51,14 @@ const automaticSidebar = function () {
         toggleDirection(container, direction, content, width, 'closed');
       }
     });
+    menuItens.forEach((item) => {
+      item.addEventListener('click', function () {
+        toggleDirection(container, direction, content, width, 'closed')
+      })
+    })
   });
+
+
 }
 try {
   automaticSidebar()
