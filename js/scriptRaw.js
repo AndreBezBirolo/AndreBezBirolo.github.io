@@ -153,7 +153,15 @@ function inputMaskPhone(input) {
 
 document.addEventListener("DOMContentLoaded", function () {
   fixedMenu();
-  typeWriter(document.querySelector('h1'));
+  if (document.querySelector('body').id === 'page-home') {
+    typeWriter(document.querySelector('h1'));
+    let form = document.querySelector('.pageclip-form')
+    Pageclip.form(form, {
+      successTemplate: '<span>Obrigado pelo contato!</span>'
+    })
+
+    inputMaskPhone(document.querySelector('#whatsapp'))
+  }
   lazyLoadImg();
   function backToTop() {
     const backToTopButton = document.querySelector('.back-to-top')
@@ -171,10 +179,5 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   backToTop();
 
-  let form = document.querySelector('.pageclip-form')
-  Pageclip.form(form, {
-    successTemplate: '<span>Obrigado pelo contato!</span>'
-  })
 
-  inputMaskPhone(document.querySelector('#whatsapp'))
 });
