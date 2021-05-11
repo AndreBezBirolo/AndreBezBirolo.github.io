@@ -637,7 +637,7 @@
           </div>
           <label for="whatsapp" class="flex column">
             Whatsapp:
-            <input required type="text" name="whatsapp" id="whatsapp" placeholder="Digite seu Whatsapp" />
+            <input onkeyup="mascara('(##) # ########',this,event,true)" required type="text" name="whatsapp" id="whatsapp" placeholder="Digite seu Whatsapp" />
           </label>
           <label for="subject" class="flex column">
             Assunto:
