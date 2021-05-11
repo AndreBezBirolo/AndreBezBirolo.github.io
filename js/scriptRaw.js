@@ -1,3 +1,42 @@
+function mascara(m,t,e,c){
+  var cursor = t.selectionStart;
+  var texto = t.value;
+  texto = texto.replace(/\D/g,'');
+  var l = texto.length;
+  var lm = m.length;
+  if(window.event) {
+    id = e.keyCode;
+  } else if(e.which){
+    id = e.which;
+  }
+  cursorfixo=false;
+  if(cursor < l)cursorfixo=true;
+  var livre = false;
+  if(id == 16 || id == 19 || (id >= 33 && id <= 40))livre = true;
+  ii=0;
+  mm=0;
+  if(!livre){
+    if(id!=8){
+      t.value="";
+      j=0;
+      for(i=0;i<lm;i++){
+        if(m.substr(i,1)=="#"){
+          t.value+=texto.substr(j,1);
+          j++;
+        }else if(m.substr(i,1)!="#"){
+          t.value+=m.substr(i,1);
+        }
+        if(id!=8 && !cursorfixo)cursor++;
+        if((j)==l+1)break;
+
+      }
+    }
+    if(c)coresMask(t);
+  }
+  if(cursorfixo && !livre)cursor--;
+  t.setSelectionRange(cursor, cursor);
+}
+
 const debounce = function (func, wait, immediate) {
   let timeout;
   return function (...args) {
@@ -127,36 +166,6 @@ function lazyLoadImg() {
   }
 }
 
-function inputMaskPhone(input) {
-  function treatment(value, isOnBlur) {
-    value = value.replace(/\D/g, "");
-    value = value.replace(/^(\d{2})(\d)/g, "($1)$2");
-    if (isOnBlur) {
-      value = value.replace(/(\d)(\d{4})$/, "$1-$2");
-    } else {
-      value = value.replace(/(\d)(\d{3})$/, "$1-$2");
-    }
-    return value;
-  }
-  input.onkeypress = function (evt) {
-    var code = window.event ? window.event.keyCode : evt.which;
-    var value = this.value;
-    if (code > 57 || (code < 48 && code != 8)) {
-      return false;
-    } else {
-      this.value = treatment(value, false);
-    }
-  };
-  input.onblur = function () {
-    var value = this.value;
-    if (value.length < 13) {
-      this.value = "";
-    } else {
-      this.value = treatment(this.value, true);
-    }
-  };
-  input.maxLength = 14;
-}
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -167,8 +176,6 @@ document.addEventListener("DOMContentLoaded", function () {
     Pageclip.form(form, {
       successTemplate: '<span>Obrigado pelo contato!</span>'
     })
-
-    inputMaskPhone(document.querySelector('#whatsapp'))
   }
   lazyLoadImg();
   function backToTop() {
