@@ -1,9 +1,9 @@
 @import 'reset';
 @import 'framework';
-@import 'responsive';
 @import 'home/home';
 @import 'trajectory/trajectory';
 @import "external/pageclip";
+
 
 /* GERAL  */
 :root {
@@ -326,3 +326,5 @@ textarea::placeholder {
   margin-left: 0 !important;
   margin-top: 0 !important;
 }
+
+@import 'responsive';

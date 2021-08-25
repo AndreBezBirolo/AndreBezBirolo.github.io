@@ -104,8 +104,6 @@
 #principles .item-principle .container-image {
   background-color: var(--color-gray-light);
   border-radius: 50%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 25px;
   margin-bottom: 16px;
@@ -301,8 +299,6 @@
 /* Section call-to-me */
 #call-to-me .button-primary {
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 30px;
   border: none;
