@@ -146,3 +146,9 @@ img {
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in
 }
+
+.svg-stroke-text {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  stroke: $color-text;
+}
