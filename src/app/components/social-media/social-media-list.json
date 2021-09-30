@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Abrir o Linkedin",
+    "link": "https://www.linkedin.com/in/andre-jbb/",
+    "iconName": "linkedin"
+  },
+  {
+    "title": "Abrir o Youtube",
+    "link": "https://www.youtube.com/channel/UCeRfhBW4-fgxUmO-v9bOt2Q",
+    "iconName": "youtube"
+  },
+  {
+    "title": "Abrir o Github",
+    "link": "https://github.com/AndreBezBirolo",
+    "iconName": "github"
+  }
+]

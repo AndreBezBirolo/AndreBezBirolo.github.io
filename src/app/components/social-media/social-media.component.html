@@ -1,0 +1,9 @@
+<ul *ngIf="socialMedias" class="menu-social-list flex end-x-row hide-from-tablet">
+  <li *ngFor="let media of socialMedias" class="menu-item">
+    <a title="{{ media.title }}" target="_blank" rel="external noopener noreferrer"
+       href="{{ media.link }}" class="link d-block">
+      <div [innerHTML]="renderIcon(media.iconName)"></div>
+    </a>
+  </li>
+</ul>
+

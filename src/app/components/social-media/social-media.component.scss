@@ -1,0 +1,18 @@
+@import '/src/app/shared/variables';
+
+:host ::ng-deep .menu-social-list {
+
+  .menu-item {
+    &:hover {
+      .svg-fill-p {
+        fill: $color-s;
+      }
+    }
+
+    .link {
+      padding: 12px 0 12px 12px;
+    }
+  }
+}
+
+
