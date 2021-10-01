@@ -20,7 +20,7 @@ import { MenuListModule } from '../components/menu-list/menu-list.module';
     CommonModule,
     SocialMediaModule,
     LogoModule,
-    MenuListModule
+    MenuListModule,
   ]
 })
 export class SharedModule { }

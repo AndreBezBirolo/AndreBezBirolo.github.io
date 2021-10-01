@@ -3,10 +3,12 @@
   *ngIf="socialMedias"
   >
   <ul
+    appKeyboardManager
     aria-label="Menu de redes sociais"
     role="menubar"
     class="menu-social-list flex end-x-row hide-from-tablet">
     <li
+      appKeyboardManagedItem
       role="none"
       *ngFor="let media of socialMedias; let first = first"
       class="menu-item">

@@ -3,10 +3,12 @@
   class="hide-from-tablet"
   [attr.aria-label]="menuTitle">
   <ul
+    appKeyboardManager
     [attr.aria-label]="menuTitle"
     role="menubar"
     class="menu-nav-list flex">
     <li
+      appKeyboardManagedItem
       *ngFor="let item of selectedMenu; let first = first;"
       role="none"
       class="menu-item">

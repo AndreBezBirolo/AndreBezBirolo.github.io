@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuListComponent } from './menu-list.component';
+import { KeyboardManagerModule } from '../../shared/directives/keyboard-manager/keyboard-manager.module';
 
 
 
@@ -12,7 +13,8 @@ import { MenuListComponent } from './menu-list.component';
     MenuListComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    KeyboardManagerModule
   ]
 })
 export class MenuListModule { }
