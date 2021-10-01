@@ -9,6 +9,9 @@
         line-height: 2rem;
         color: $color-text;
         text-decoration: none;
+        &:hover {
+          color: $color-s-dark;
+        }
       }
     }
   }
