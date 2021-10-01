@@ -5,8 +5,8 @@ import { AfterViewInit, Directive, ElementRef, HostListener } from '@angular/cor
 })
 export class FocusTrapDirective implements AfterViewInit {
 
-  private firstFocusableElement: HTMLElement = null;
-  private lastFocusableElement: HTMLElement = null;
+  private firstFocusableElement!: HTMLElement;
+  private lastFocusableElement!: HTMLElement;
 
   constructor(private elementRef: ElementRef<any>) {
   }

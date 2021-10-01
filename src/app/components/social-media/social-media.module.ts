@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SocialMediaComponent } from './social-media.component';
 import { KeyboardManagerModule } from '../../shared/directives/keyboard-manager/keyboard-manager.module';
+import { FocusTrapModule } from '../../shared/directives/focus-trap/focus-trap.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { KeyboardManagerModule } from '../../shared/directives/keyboard-manager/
   ],
   imports: [
     CommonModule,
-    KeyboardManagerModule
+    KeyboardManagerModule,
+    FocusTrapModule
   ]
 })
 export class SocialMediaModule { }
