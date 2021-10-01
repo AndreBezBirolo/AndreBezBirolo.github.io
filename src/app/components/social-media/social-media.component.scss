@@ -1,16 +1,16 @@
-@import '/src/app/shared/variables';
+@import 'variables';
 
-:host ::ng-deep .menu-social-list {
-
+.menu-social-list {
   .menu-item {
-    &:hover {
-      .svg-fill-p {
-        fill: var(--color-s);
-      }
-    }
-
     .link {
       padding: 12px 0 12px 12px;
+      ::ng-deep {
+        &:hover {
+          .svg-fill-p {
+            fill: var(--color-s);
+          }
+        }
+      }
     }
   }
 }

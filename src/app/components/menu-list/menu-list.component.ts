@@ -10,6 +10,7 @@ export class MenuListComponent implements OnInit {
 
   @Input() menuTitle: string = 'Menu';
   @Input() selectedMenu!: MenuList[];
+  @Input() location!: string;
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-@import '/src/app/shared/_variables.scss';
+@import '_variables.scss';
 
 header {
   padding: 14px 0;
@@ -13,9 +13,7 @@ header {
   max-width: 1920px;
   app-menu-list {
     width: 30%;
-    ::ng-deep .link {
-      padding: 12px 12px 12px 0;
-    }
+
   }
   app-logo {
     width: 40%;

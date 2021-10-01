@@ -1,6 +1,8 @@
 <nav
   *ngIf="selectedMenu"
   class="hide-from-tablet"
+  [class.header] = "location == 'header'"
+  [class.footer] = "location == 'footer'"
   [attr.aria-label]="menuTitle">
   <ul
     appKeyboardManager

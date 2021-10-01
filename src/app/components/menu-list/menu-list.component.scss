@@ -1,18 +1,33 @@
-@import '/src/app/shared/variables';
+@import 'variables';
 
-:host ::ng-deep {
-  .menu-nav-list {
-    .menu-item {
-      .link {
-        //padding: 12px 12px 12px 0;
-        font-size: 1.4rem;
-        line-height: 2rem;
-        color: var(--color-text);
-        text-decoration: none;
-        &:hover {
-          color: var(--color-s-dark);
-        }
+// Global style
+.menu-nav-list {
+  .menu-item {
+    .link {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      color: var(--color-text);
+      text-decoration: none;
+      &:hover {
+        color: var(--color-s-dark);
       }
+    }
+  }
+}
+
+// specify style
+.header {
+  .menu-nav-list {
+    .link {
+      padding: 12px 12px 12px 0;
+    }
+  }
+}
+
+.footer {
+  .menu-nav-list {
+    .link {
+      padding: 12px;
     }
   }
 }

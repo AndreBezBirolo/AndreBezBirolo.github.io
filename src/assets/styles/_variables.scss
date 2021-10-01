@@ -1,25 +1,43 @@
-:root {
-  --color-white: #fff;
-  --color-text: #18191f;
-  --color-gray-light: #f4f5f7;
-
+body {
   --color-p: #388e3c;
   --color-p-light: #98ee99;
-  --color-p-dark: #00600f;
-  --color-p-contrast: --color-text;
-  --color-p-light-contrast: --color-text;
-  --color-p-dark-contrast: --color-white;
+  --color-p-contrast: var(--color-text);
+  --color-p-light-contrast: var(--color-text);
+  --color-p-dark-contrast: var(--color-white);
 
   --color-s: #ab47bc;
   --color-s-light: #df78ef;
   --color-s-dark: #790e8b;
-  --color-s-contrast: --color-white;
-  --color-s-light-contrast: --color-text;
-  --color-s-dark-contrast: --color-white;
+  --color-s-contrast: var(--color-white);
+  --color-s-light-contrast: var(--color-text);
+  --color-s-dark-contrast: var(--color-white);
 
   --height-burger: 4px;
   --width-burger: 48px;
-  --color-burger: --color-text;
+  --color-burger: var(--color-text);
+
+  --selection-color: var(--color-text);
+  --selection-background: var(--color-s-light);
+
+  --input-shadow-color-hover: 0 0 0 .2rem rgba(121, 14, 139, .25);
+  --color-input-border: #323232;
+  --color-input: #495057;
+
+  &.theme-light {
+    --color-white: #fff;
+    --color-text: #18191f;
+    --color-gray-light: #f4f5f7;
+
+    --color-p-dark: #00600f;
+
+  }
+  &.theme-dark {
+    --color-white: #232323;
+    --color-text: #f4f5f7;
+    --color-gray-light: #141414;
+
+    --color-p-dark: #388e3c;
+  }
 
   --font-size-title-h1: 7.2rem;
   --line-height-title-h1: 9.8rem;
@@ -33,12 +51,6 @@
   --font-size-description: 1.8rem;
   --line-height-description: 3.2rem;
 
-  --selection-color: --color-text;
-  --selection-background: --color-s-light;
-
-  --input-shadow-color-hover: 0 0 0 .2rem rgba(121, 14, 139, .25);
-  --color-input-border: #323232;
-  --color-input: #495057;
   @media (max-width: 1280px) {
     --font-size-title-h1: 5.6rem;
     --line-height-title-h1: 6.2rem;

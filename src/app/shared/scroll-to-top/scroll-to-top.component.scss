@@ -1,9 +1,6 @@
-@import '/src/app/shared/variables';
-
 .back-to-top {
   position: fixed;
   opacity: 0;
-  -webkit-transform: translate3d(0, 70px, 0);
   transform: translate3d(0, 70px, 0);
   bottom: 20px;
   right: 20px;
@@ -12,12 +9,9 @@
       fill: var(--color-s);
     }
   }
-}
-
-:host.visible {
-  .back-to-top {
+  &.visible {
     opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
+

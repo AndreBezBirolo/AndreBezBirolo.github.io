@@ -20,7 +20,6 @@ export class ScrollToTopComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
-    const backToTopButton = this.elementRef.nativeElement;
-    (scrollY > 200) ? backToTopButton.classList.add('visible') : backToTopButton.classList.remove('visible');
+    return scrollY > 200;
   }
 }
