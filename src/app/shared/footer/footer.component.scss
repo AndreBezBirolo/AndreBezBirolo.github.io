@@ -1,0 +1,36 @@
+@import '/src/app/shared/_variables.scss';
+
+footer {
+  ::ng-deep {
+    .logo {
+      margin-bottom: 36px;
+      @media(max-width: 1024px) {
+        padding-top: 60px;
+      }
+    }
+    .secondary-navigation {
+      .menu-nav-list {
+        justify-content: center;
+        .link {
+          padding: 12px 0 12px 12px;
+        }
+      }
+    }
+  }
+  @media(min-width: 1023px) {
+    .secondary-navigation {
+      margin-bottom: 60px;
+    }
+  }
+  .copyright {
+    border-top: 1px solid rgba(24, 25, 31, 0.2);
+    padding: 16px 0;
+    @media (max-width: 1024px) {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+

@@ -10,7 +10,7 @@
     }
     &:hover {
       .logo-stroke {
-        stroke: $color-s-dark;
+        stroke: var(--color-s-dark);
       }
     }
   }

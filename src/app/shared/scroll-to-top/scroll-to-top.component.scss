@@ -9,7 +9,7 @@
   right: 20px;
   &:hover {
     .svg-fill-p {
-      fill: $color-s;
+      fill: var(--color-s);
     }
   }
 }

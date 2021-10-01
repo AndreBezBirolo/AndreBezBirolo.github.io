@@ -5,7 +5,7 @@
   .menu-item {
     &:hover {
       .svg-fill-p {
-        fill: $color-s;
+        fill: var(--color-s);
       }
     }
 

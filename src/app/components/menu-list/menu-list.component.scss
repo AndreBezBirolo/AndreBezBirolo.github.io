@@ -7,10 +7,10 @@
         //padding: 12px 12px 12px 0;
         font-size: 1.4rem;
         line-height: 2rem;
-        color: $color-text;
+        color: var(--color-text);
         text-decoration: none;
         &:hover {
-          color: $color-s-dark;
+          color: var(--color-s-dark);
         }
       }
     }

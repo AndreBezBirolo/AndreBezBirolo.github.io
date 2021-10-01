@@ -1,6 +1,6 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { MenuList } from '../../components/menu-list/menu-list';
-import menuImported from './menu.json'
+import menuImported from '../menu.json'
 import { fade } from '../animations/fade';
 
 @Component({
