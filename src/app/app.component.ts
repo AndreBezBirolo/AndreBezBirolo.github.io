@@ -1,14 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { filter, map, switchMap } from 'rxjs/operators';
+import { fade } from './shared/animations/fade';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [fade]
 })
 export class AppComponent implements OnInit {
+  @HostBinding('@fade') fade = true;
   name: string = 'André J. Bez Birolo'
 
   constructor(
