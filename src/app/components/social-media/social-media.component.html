@@ -1,9 +1,27 @@
-<ul *ngIf="socialMedias" class="menu-social-list flex end-x-row hide-from-tablet">
-  <li *ngFor="let media of socialMedias" class="menu-item">
-    <a title="{{ media.title }}" target="_blank" rel="external noopener noreferrer"
-       href="{{ media.link }}" class="link d-block">
-      <div [innerHTML]="renderIcon(media.iconName)"></div>
-    </a>
-  </li>
-</ul>
+<nav
+  aria-label="Menu de redes sociais"
+  *ngIf="socialMedias"
+  >
+  <ul
+    aria-label="Menu de redes sociais"
+    role="menubar"
+    class="menu-social-list flex end-x-row hide-from-tablet">
+    <li
+      role="none"
+      *ngFor="let media of socialMedias; let first = first"
+      class="menu-item">
+      <a
+        [attr.tabindex]="first ? 0 : -1"
+        role="menuitem"
+        title="{{ media.title }}"
+        target="_blank"
+        rel="external noopener noreferrer"
+        href="{{ media.link }}"
+        class="link d-block">
+        <div [innerHTML]="renderIcon(media.iconName)"></div>
+      </a>
+    </li>
+  </ul>
+
+</nav>
 

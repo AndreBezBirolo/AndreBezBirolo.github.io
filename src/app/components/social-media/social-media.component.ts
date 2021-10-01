@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SocialMedia } from './social-media';
 import socialMediaData from './social-media-list.json';
 import { DomSanitizer } from '@angular/platform-browser';
