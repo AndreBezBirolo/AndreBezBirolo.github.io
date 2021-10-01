@@ -9,11 +9,11 @@
     role="menubar"
     class="menu-social-list flex end-x-row hide-from-tablet">
     <li
-      appKeyboardManagedItem
       role="none"
       *ngFor="let media of socialMedias; let first = first"
       class="menu-item">
       <a
+        appKeyboardManagedItem
         [attr.tabindex]="first ? 0 : -1"
         role="menuitem"
         title="{{ media.title }}"

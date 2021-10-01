@@ -6,7 +6,7 @@ import { KeyboardManagedItemDirective } from './keyboard-managed-item.directive'
 })
 export class KeyboardManagerDirective {
 
-  @ContentChildren(KeyboardManagedItemDirective) public items: QueryList<KeyboardManagedItemDirective> = null as any;
+  @ContentChildren(KeyboardManagedItemDirective, { descendants: true }) public items!: QueryList<KeyboardManagedItemDirective>;
 
   @HostListener('keyup', ['$event'])
   public manageKeys(event: KeyboardEvent): void {

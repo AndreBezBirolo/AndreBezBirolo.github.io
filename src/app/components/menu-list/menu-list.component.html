@@ -9,11 +9,12 @@
     role="menubar"
     class="menu-nav-list flex">
     <li
-      appKeyboardManagedItem
+
       *ngFor="let item of selectedMenu; let first = first;"
       role="none"
       class="menu-item">
       <a
+        appKeyboardManagedItem
         [attr.tabindex]="first ? 0 : -1"
         role="menuitem"
         [title]="item.description"
