@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialMediaModule } from '../components/social-media/social-media.module';
 import { LogoModule } from '../components/logo/logo.module';
+import { MenuListModule } from '../components/menu-list/menu-list.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { LogoModule } from '../components/logo/logo.module';
   imports: [
     CommonModule,
     SocialMediaModule,
-    LogoModule
+    LogoModule,
+    MenuListModule
   ]
 })
 export class SharedModule { }

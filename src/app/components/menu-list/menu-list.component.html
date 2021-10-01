@@ -1,0 +1,23 @@
+<nav
+  *ngIf="selectedMenu"
+  class="hide-from-tablet"
+  [attr.aria-label]="menuTitle">
+  <ul
+    [attr.aria-label]="menuTitle"
+    role="menubar"
+    class="menu-nav-list flex">
+    <li
+      *ngFor="let item of selectedMenu; let first = first;"
+      role="none"
+      class="menu-item">
+      <a
+        [attr.tabindex]="first ? 0 : -1"
+        role="menuitem"
+        [title]="item.description"
+        [href]="item.link"
+        class="link transition font-bold">
+        {{ item.title }}
+      </a>
+    </li>
+  </ul>
+</nav>

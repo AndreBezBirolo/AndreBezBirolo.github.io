@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Trajetória",
+    "description": "Ir para a seção da minha trajetória",
+    "link": "#trajectory"
+  },
+  {
+    "title": "Avaliações",
+    "description": "Ir para a seção de avaliação",
+    "link": "#feedback"
+  },
+  {
+    "title": "Tecnologias",
+    "description": "Ir para a seção das tecnologias que uso",
+    "link": "#tools"
+  }
+]

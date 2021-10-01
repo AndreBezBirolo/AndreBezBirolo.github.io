@@ -135,6 +135,7 @@ img {
 
 @import "./app/shared/variables";
 
+// SVG Style's
 .svg-fill-white {
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
@@ -151,4 +152,21 @@ img {
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
   stroke: $color-text;
+}
+
+// General
+* {
+  outline-width: 2px;
+  outline-color: $color-s-dark;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Manrope", sans-serif;
+  font-size: 62.5%;
+  color: $color-text;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  max-width: 100%;
 }

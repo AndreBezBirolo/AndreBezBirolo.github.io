@@ -1,0 +1,15 @@
+@import '/src/app/shared/variables';
+
+:host ::ng-deep {
+  .menu-nav-list {
+    .menu-item {
+      .link {
+        //padding: 12px 12px 12px 0;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: $color-text;
+        text-decoration: none;
+      }
+    }
+  }
+}
