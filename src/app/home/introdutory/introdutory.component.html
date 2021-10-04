@@ -1,0 +1,23 @@
+<section class="flex center-y-row" id="introdutory">
+  <div class="container-text">
+    <h1 class="title font-e-bold">{{ mockup.content.title }}</h1>
+    <p class="description">{{ mockup.content.description }}</p>
+    <app-button
+      *ngIf="mockup.content.button.haveButton"
+      [buttonTitle]="mockup.content.button.buttonTitle"
+      [isExternal]="mockup.content.button.externalLink"
+      [alternativeText]="mockup.content.button.buttonAlt"
+      [link]="mockup.content.button.link"
+    >
+    </app-button>
+  </div>
+  <div class="flex center-x-row container-img">
+    <img class="photo lazy"
+         width="400"
+         height="400"
+         [src]="mockup.content.photo.src"
+         [attr.data-src]="mockup.content.photo.src"
+         [attr.data-srcset]="mockup.content.photo.src"
+         [alt]="mockup.content.photo.alt">
+  </div>
+</section>
