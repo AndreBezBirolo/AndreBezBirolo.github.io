@@ -12,8 +12,8 @@ export const content = {
       description: 'Trabalho para que seu site seja destacado no google com sua marca!'
     },
     {
-      svg: 'Perfomance',
-      title: 'Acessibilidade',
+      svg: '3',
+      title: 'Perfomance',
       description: 'F12 e em seguida abra a aba Lighthouse e clique em Generate report para ver a sua performance!'
     },
     {
