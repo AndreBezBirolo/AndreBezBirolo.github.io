@@ -14,14 +14,16 @@ export class DarkModeComponent implements OnInit {
   @Output()
   readonly darkModeSwitched = new EventEmitter<boolean>();
 
+  public checked: boolean = false;
+
   constructor(
     private elementRef: ElementRef
   ) {
   }
 
   onDarkModeSwitched(element: { target: any; }) {
-    let checked = element.target.checked;
-    this.darkModeSwitched.emit(checked);
+    this.checked = element.target.checked;
+    this.darkModeSwitched.emit(this.checked);
   }
 
   ngOnInit(): void {

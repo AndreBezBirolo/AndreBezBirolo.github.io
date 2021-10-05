@@ -3,7 +3,7 @@
   aria-label="Mudar o tema do site."
   tabindex="0"
   (change)="onDarkModeSwitched($event)"
-  aria-checked="false"
+  [attr.aria-checked]="checked"
   role="checkbox"
   type="checkbox">
 <label class="dark-mode-button transition" [class.visible]="onScroll()" for="dark-mode">
