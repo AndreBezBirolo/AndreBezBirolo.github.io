@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import pageContentJson from "./principles-content.json";
-import { Principles } from './principles';
+import { content } from './principles.constant';
 
 
 @Component({
@@ -10,7 +9,7 @@ import { Principles } from './principles';
 })
 export class PrinciplesComponent implements OnInit {
 
-  public pageContent: Principles = pageContentJson;
+  public pageContent = content;
 
   constructor() { }
 
