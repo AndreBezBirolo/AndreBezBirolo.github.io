@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import pageContentJson from "./introdutory-content.json";
-import { Introdutory } from './introdutory';
+import { content } from './introdutory.constant';
 
 @Component({
   selector: 'app-introdutory',
@@ -9,7 +8,7 @@ import { Introdutory } from './introdutory';
 })
 export class IntrodutoryComponent implements OnInit {
 
-  public mockup: Introdutory = pageContentJson;
+  public mockup = content;
 
   constructor() { }
 
