@@ -9,6 +9,7 @@ import { HomeModule } from './home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScrollToTopModule } from './shared/scroll-to-top/scroll-to-top.module';
 import { DarkModeModule } from './shared/dark-mode/dark-mode.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DarkModeModule } from './shared/dark-mode/dark-mode.module';
     ErrorsModule,
     HomeModule,
     ScrollToTopModule,
-    DarkModeModule
+    DarkModeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
