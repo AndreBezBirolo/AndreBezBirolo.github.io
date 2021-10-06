@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SocialMedia } from './social-media';
-import socialMediaData from './social-media-list.json';
+import { content } from './social-media.constant'
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
@@ -9,7 +9,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./social-media.component.scss']
 })
 export class SocialMediaComponent implements OnInit {
-  socialMedias: SocialMedia[] = socialMediaData;
+  socialMedias: SocialMedia[] = content;
 
   constructor(
     private sanitizer: DomSanitizer

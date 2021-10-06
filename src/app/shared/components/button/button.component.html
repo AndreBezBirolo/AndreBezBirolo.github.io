@@ -3,6 +3,7 @@
   tabindex="0"
   [title]="alternativeText"
   [attr.rel]="isExternal ? 'external noopener noreferrer' : null"
+  [attr.target]="isExternal ? '_blank' : '_self'"
   href="{{ link }}"
   class="button-primary transition">
   {{ buttonTitle }}

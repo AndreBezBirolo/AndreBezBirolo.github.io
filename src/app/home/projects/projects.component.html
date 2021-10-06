@@ -1,6 +1,6 @@
 <section
   *ngIf="(repositorios$ | async) as projects"
-  class="container"
+  class="container flex column center-x-column"
   id="projects">
   <h2 class="title font-e-bold txt-center">Projetos recentes.</h2>
   <div
@@ -27,4 +27,10 @@
       </div>
     </a>
   </div>
+  <app-button
+    alternativeText="Ir para a página de projetos no github do André."
+    [isExternal]="true"
+    [link]="github_link"
+    buttonTitle="Ver todos os projetos">
+  </app-button>
 </section>

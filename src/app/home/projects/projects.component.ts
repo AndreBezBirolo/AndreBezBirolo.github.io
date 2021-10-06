@@ -1,7 +1,8 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProjectsService } from './projects.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Observable } from 'rxjs';
+import { environment } from '../../../environments/environment';
 
 
 @Component({
@@ -13,6 +14,8 @@ export class ProjectsComponent implements OnInit {
 
   public repositorios$ = this.projectsService.listRepos();
   public image$!: Observable<any>;
+  github_link = environment.GITHUB_LINK;
+
 
   constructor(
     private projectsService: ProjectsService,
