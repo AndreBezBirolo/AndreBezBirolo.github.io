@@ -119,16 +119,20 @@ img {
   font-weight: 300
 }
 
+.font-l-bold {
+  font-weight: 600;
+}
+
 .font-bold {
   font-weight: 700
 }
 
-.font-uppercase {
-  text-transform: uppercase;
-}
-
 .font-e-bold {
   font-weight: 800;
+}
+
+.font-uppercase {
+  text-transform: uppercase;
 }
 
 .txt-center {
@@ -137,6 +141,10 @@ img {
 
 .d-block {
   display: block;
+}
+
+.margin-auto {
+  margin: 0 auto;
 }
 
 @media (max-width: 1024px) {

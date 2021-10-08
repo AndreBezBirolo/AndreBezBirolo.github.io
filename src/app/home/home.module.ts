@@ -7,6 +7,7 @@ import { PrinciplesComponent } from './principles/principles.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { TrajectoryComponent } from './trajectory/trajectory.component';
 import { RouterModule } from '@angular/router';
+import { StartingComponent } from './starting/starting.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { RouterModule } from '@angular/router';
     IntrodutoryComponent,
     PrinciplesComponent,
     ProjectsComponent,
-    TrajectoryComponent
+    TrajectoryComponent,
+    StartingComponent
   ],
   imports: [
     CommonModule,
