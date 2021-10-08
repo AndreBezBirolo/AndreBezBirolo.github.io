@@ -2,16 +2,16 @@
   {
     "title": "Trajetória",
     "description": "Ir para a seção da minha trajetória",
-    "link": "#trajectory"
+    "link": "home#trajectory"
   },
   {
     "title": "Avaliações",
     "description": "Ir para a seção de avaliação",
-    "link": "#feedback"
+    "link": "home#feedback"
   },
   {
     "title": "Tecnologias",
     "description": "Ir para a seção das tecnologias que uso",
-    "link": "#tools"
+    "link": "home#tools"
   }
 ]

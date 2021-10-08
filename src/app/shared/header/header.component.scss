@@ -11,6 +11,9 @@ header {
   left: 0;
   right: 0;
   max-width: 1920px;
+  &.up {
+    transform: translate3d(0, -88px, 0);
+  }
   app-menu-list {
     width: 30%;
 

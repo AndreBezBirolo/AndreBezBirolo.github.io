@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MenuListComponent } from './menu-list.component';
 import { KeyboardManagerModule } from '../../shared/directives/keyboard-manager/keyboard-manager.module';
 import { FocusTrapModule } from '../../shared/directives/focus-trap/focus-trap.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -16,7 +17,8 @@ import { FocusTrapModule } from '../../shared/directives/focus-trap/focus-trap.m
   imports: [
     CommonModule,
     KeyboardManagerModule,
-    FocusTrapModule
+    FocusTrapModule,
+    RouterModule
   ]
 })
 export class MenuListModule { }

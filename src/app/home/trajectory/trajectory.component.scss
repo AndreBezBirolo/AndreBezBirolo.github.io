@@ -1,0 +1,52 @@
+#trajectory {
+  margin: 120px 0 60px 0;
+  @media(max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-image {
+    @media(min-width: 900px) {
+      width: 50%;
+    }
+  }
+
+  .container-content {
+    @media(min-width: 900px) {
+      width: 50%;
+    }
+
+    .sub-title {
+      margin-bottom: 8px;
+      font-size: 1.4rem;
+      letter-spacing: 2px;
+      color: var(--color-p-dark);
+    }
+
+    .title {
+      margin-bottom: 32px;
+    }
+
+    .description {
+      margin-bottom: 32px;
+    }
+
+    .go-to-page {
+      text-decoration: none;
+      color: var(--color-p);
+      @media(max-width: 900px) {
+        justify-content: center;
+      }
+
+      .arrow-icon {
+        margin-left: 8px;
+      }
+
+      &:hover {
+        .arrow-icon {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+    }
+  }
+}

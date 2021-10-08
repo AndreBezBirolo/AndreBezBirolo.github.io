@@ -9,6 +9,7 @@ import menuImported from '../menu.json'
 })
 export class HeaderComponent implements OnInit {
 
+  isVisible: boolean = true;
   primaryMenu: MenuList[] = menuImported
 
   constructor() { }
