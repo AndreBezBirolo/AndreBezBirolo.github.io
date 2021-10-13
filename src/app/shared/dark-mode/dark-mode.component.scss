@@ -10,6 +10,7 @@ input {
 }
 
 .dark-mode-button{
+  z-index: 1;
   cursor: pointer;
   position: fixed;
   opacity: 0;

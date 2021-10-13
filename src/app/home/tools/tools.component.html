@@ -1,0 +1,22 @@
+<section *ngIf="pageContent.tools.length != 0"
+         class="container"
+         id="tools">
+  <h2 class="title font-e-bold txt-center">{{ pageContent.title }}</h2>
+  <swiper [config]="swiperConfig">
+    <ul class="swiper-wrapper tools-list">
+      <li *ngFor="let item of pageContent.tools"
+          class="swiper-slide tool-item">
+        <img class="image margin-auto lazy"
+             width="64"
+             height="64"
+             src="assets/loader_min.svg"
+             data-srcset="assets/img/home/tools/{{ item.imageName }}.jpg"
+             data-src="assets/img/home/tools/{{ item.imageName }}.jpg" alt="{{ item.alternativeText }}">
+      </li>
+    </ul>
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+  </swiper>
+</section>

@@ -1,0 +1,25 @@
+#tools {
+  ::ng-deep {
+    .swiper-pagination-bullet {
+      background: var(--color-text);
+      opacity: 1;
+      &.swiper-pagination-bullet-active {
+        background: var(--color-s);
+        opacity: 1;
+      }
+    }
+  }
+  swiper {
+    margin-top: 32px;
+    .tools-list {
+      margin: 32px 0 60px;
+      .tool-item {
+        img {
+          border-radius: 50%;
+          box-shadow: 0 10px 20px rgb(24 39 75 / 8%);
+        }
+      }
+    }
+  }
+}
+
