@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { StartingComponent } from './starting/starting.component';
 import { ToolsComponent } from './tools/tools.component';
 import { KeyboardManagerModule } from '../shared/directives/keyboard-manager/keyboard-manager.module';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { KeyboardManagerModule } from '../shared/directives/keyboard-manager/key
     ProjectsComponent,
     TrajectoryComponent,
     StartingComponent,
-    ToolsComponent
+    ToolsComponent,
+    FeedbackComponent
   ],
   imports: [
     CommonModule,
