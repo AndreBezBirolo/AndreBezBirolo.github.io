@@ -1,0 +1,83 @@
+#call-to-me {
+  margin: 60px auto;
+  @media(min-width: 799px) {
+    margin: 120px auto 60px;
+  }
+  & > .title {
+    margin-bottom: 32px;
+  }
+  .button-primary {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 30px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+
+    label {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    label input,
+    label textarea {
+      margin-top: 8px;
+    }
+
+    .grouped-itens {
+      width: 100%;
+      @media(max-width: 410px) {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      & > label:first-child {
+        margin-right: 16px;
+        @media(max-width: 410px) {
+          margin-right: 0;
+        }
+      }
+
+
+    }
+  }
+
+  .container-differentials {
+    @media (max-width: 900px) {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .item {
+      margin: 10px;
+      color: var(--color-text);
+      @media (max-width: 410px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      svg {
+        margin-right: 8px;
+        @media (max-width: 410px) {
+          margin-right: 0;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+
+

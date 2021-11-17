@@ -20,7 +20,6 @@ body {
   --selection-background: var(--color-s-light);
 
   --input-shadow-color-hover: 0 0 0 .2rem rgba(121, 14, 139, .25);
-  --color-input-border: #323232;
   --color-input: #495057;
 
   &.theme-light {
@@ -29,6 +28,7 @@ body {
     --color-gray-light: #f4f5f7;
 
     --color-p-dark: #00600f;
+    --color-input-border: #323232;
 
   }
   &.theme-dark {
@@ -37,6 +37,8 @@ body {
     --color-gray-light: #141414;
 
     --color-p-dark: #388e3c;
+    --color-input-border: #656565;
+
   }
 
   --font-size-title-h1: 7.2rem;

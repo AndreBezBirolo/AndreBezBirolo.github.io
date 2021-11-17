@@ -19,7 +19,7 @@ export class ScrollToTopComponent implements OnInit {
   }
 
   @HostListener('window:scroll', ['$event'])
-  onScroll() {
+  onScroll(): Boolean {
     return scrollY > 200;
   }
 }
