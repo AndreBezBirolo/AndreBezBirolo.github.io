@@ -4,16 +4,17 @@ import { NgControl } from '@angular/forms';
 @Directive({
   selector: '[appDisableControl]'
 })
-export class DisabledControlDirective implements OnChanges{
+export class DisabledControlDirective implements OnChanges {
 
   @Input() appDisableControl = false;
+
   constructor(private ngControl: NgControl) {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if(changes.appDisableControl) {
+    if (changes.appDisableControl) {
       const action = this.appDisableControl ? 'disable' : 'enable';
-      this.ngControl.control[action]();
+      this.ngControl.control[ action ]();
     }
   }
 }

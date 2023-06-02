@@ -22,8 +22,8 @@ export class FocusTrapDirective implements AfterViewInit {
         input:not([disabled]),
         select:not([disabled])`
       ) as Array<HTMLElement>;
-    this.firstFocusableElement = focusableElements[0];
-    this.lastFocusableElement = focusableElements[focusableElements.length -1];
+    this.firstFocusableElement = focusableElements[ 0 ];
+    this.lastFocusableElement = focusableElements[ focusableElements.length - 1 ];
     this.firstFocusableElement.focus();
   }
 

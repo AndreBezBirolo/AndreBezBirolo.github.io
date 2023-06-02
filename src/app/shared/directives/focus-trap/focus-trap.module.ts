@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FocusTrapDirective } from './focus-trap.directive';
 
 
-
 @NgModule({
   declarations: [FocusTrapDirective],
   imports: [
@@ -13,4 +12,5 @@ import { FocusTrapDirective } from './focus-trap.directive';
     FocusTrapDirective
   ]
 })
-export class FocusTrapModule { }
+export class FocusTrapModule {
+}

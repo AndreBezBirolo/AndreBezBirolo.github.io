@@ -1,26 +1,26 @@
 <nav
   *ngIf="selectedMenu"
-  class="hide-from-tablet"
-  [class.header] = "location == 'header'"
-  [class.footer] = "location == 'footer'"
-  [attr.aria-label]="menuTitle">
+  [attr.aria-label]="menuTitle"
+  [class.footer]="location == 'footer'"
+  [class.header]="location == 'header'"
+  class="hide-from-tablet">
   <ul
-    appKeyboardManager
     [attr.aria-label]="menuTitle"
-    role="menubar"
-    class="menu-nav-list flex">
+    appKeyboardManager
+    class="menu-nav-list flex"
+    role="menubar">
     <li
 
       *ngFor="let item of selectedMenu; let first = first;"
-      role="none"
-      class="menu-item">
+      class="menu-item"
+      role="none">
       <a
-        appKeyboardManagedItem
         [attr.tabindex]="first ? 0 : -1"
-        role="menuitem"
-        [title]="item.description"
         [href]="item.link"
-        class="link transition font-bold">
+        [title]="item.description"
+        appKeyboardManagedItem
+        class="link transition font-bold"
+        role="menuitem">
         {{ item.title }}
       </a>
     </li>

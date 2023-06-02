@@ -5,24 +5,24 @@
   <h2 class="title font-e-bold txt-center">Projetos recentes.</h2>
   <div
     appKeyboardManager
-    role="listbox"
-    class="grid-projects flex center-x-row wrap">
+    class="grid-projects flex center-x-row wrap"
+    role="listbox">
     <a
-      appKeyboardManagedItem
       *ngFor="let project of projects;"
-      role="listitem"
-      title="Ir para o projeto {{ project.name }}"
-      target="_blank"
       [href]="project.html_url"
+      appKeyboardManagedItem
       class="project-card"
-      rel="noopener noreferrer">
-      <img class="image lazy"
-           width="350"
-           height="350"
-           data-srcset="media/projects/gocorona.jpg"
+      rel="noopener noreferrer"
+      role="listitem"
+      target="_blank"
+      title="Ir para o projeto {{ project.name }}">
+      <img alt
+           class="image lazy"
            data-src="media/projects/gocorona.jpg"
-           alt
-           src="assets/loader_min.svg">
+           data-srcset="media/projects/gocorona.jpg"
+           height="350"
+           src="assets/loader_min.svg"
+           width="350">
       <div class="content">
         <h3 class="title font-bold">{{ project.name }}</h3>
         <p class="description">{{ project.description }}</p>
@@ -30,9 +30,9 @@
     </a>
   </div>
   <app-button
-    alternativeText="Ir para a página de projetos no github do André."
     [isExternal]="true"
     [link]="github_link"
+    alternativeText="Ir para a página de projetos no github do André."
     buttonTitle="Ver todos os projetos">
   </app-button>
 </section>

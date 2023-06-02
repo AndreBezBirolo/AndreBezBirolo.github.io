@@ -7,12 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() alternativeText: string = "Atualize o texto alternativo";
-  @Input() isExternal: boolean = false;
-  @Input() link: string = 'Javascript:';
-  @Input() buttonTitle: string = 'Atualize o texto';
+  @Input() alternativeText = 'Atualize o texto alternativo';
+  @Input() isExternal = false;
+  @Input() link = 'Javascript:';
+  @Input() buttonTitle = 'Atualize o texto';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

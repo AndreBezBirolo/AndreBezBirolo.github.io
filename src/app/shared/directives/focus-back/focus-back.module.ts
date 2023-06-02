@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FocusBackDirective } from './focus-back.directive';
 
 
-
 @NgModule({
   declarations: [
     FocusBackDirective
@@ -15,4 +14,5 @@ import { FocusBackDirective } from './focus-back.directive';
     FocusBackDirective
   ]
 })
-export class FocusBackModule { }
+export class FocusBackModule {
+}

@@ -6,12 +6,12 @@
     <ul class="swiper-wrapper tools-list">
       <li *ngFor="let item of pageContent.tools"
           class="swiper-slide tool-item">
-        <img class="image margin-auto lazy"
-             width="64"
-             height="64"
-             src="assets/loader_min.svg"
+        <img alt="{{ item.alternativeText }}"
+             class="image margin-auto lazy"
+             data-src="assets/img/home/tools/{{ item.imageName }}.jpg"
              data-srcset="assets/img/home/tools/{{ item.imageName }}.jpg"
-             data-src="assets/img/home/tools/{{ item.imageName }}.jpg" alt="{{ item.alternativeText }}">
+             height="64"
+             src="assets/loader_min.svg" width="64">
       </li>
     </ul>
 

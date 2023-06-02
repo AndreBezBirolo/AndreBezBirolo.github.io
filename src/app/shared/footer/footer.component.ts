@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import menuImported from '../menu.json'
+import menuImported from '../menu.json';
 import { MenuList } from '../../components/menu-list/menu-list';
 
 
@@ -14,7 +14,8 @@ export class FooterComponent implements OnInit {
   @Input() copyrightName!: string;
   year: number = (new Date()).getFullYear();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

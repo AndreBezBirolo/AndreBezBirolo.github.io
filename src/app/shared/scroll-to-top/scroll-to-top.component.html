@@ -1,6 +1,9 @@
-<a tabindex="-1" (click)="onClick()" href="Javascript:" title="Voltar para o topo da página" class="transition back-to-top" [class.visible]="onScroll()">
-  <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path class="transition svg-fill-p" d="M24 48.1951C37.248 48.1951 48 37.4431 48 24.1951C48 10.9471 37.248 0.195068 24 0.195068C10.752 0.195068 0 10.9471 0 24.1951C0 37.4431 10.752 48.1951 24 48.1951ZM26.4 24.1951V33.7951H21.6V24.1951H14.4L24 14.5951L33.6 24.1951H26.4Z" fill="#388E3C"/>
-    <path d="M14 24.5L24 14.5L34 24.5H26.5V34H21.5V24.5H14Z" class="svg-fill-white"/>
+<a (click)="onClick()" [class.visible]="onScroll()" class="transition back-to-top" href="Javascript:"
+   tabindex="-1" title="Voltar para o topo da página">
+  <svg fill="none" height="49" viewBox="0 0 48 49" width="48" xmlns="http://www.w3.org/2000/svg">
+    <path class="transition svg-fill-p"
+          d="M24 48.1951C37.248 48.1951 48 37.4431 48 24.1951C48 10.9471 37.248 0.195068 24 0.195068C10.752 0.195068 0 10.9471 0 24.1951C0 37.4431 10.752 48.1951 24 48.1951ZM26.4 24.1951V33.7951H21.6V24.1951H14.4L24 14.5951L33.6 24.1951H26.4Z"
+          fill="#388E3C"/>
+    <path class="svg-fill-white" d="M14 24.5L24 14.5L34 24.5H26.5V34H21.5V24.5H14Z"/>
   </svg>
 </a>

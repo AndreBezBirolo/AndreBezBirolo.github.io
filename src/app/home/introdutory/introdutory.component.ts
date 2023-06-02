@@ -10,7 +10,8 @@ export class IntrodutoryComponent implements OnInit {
 
   public mockup = content;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

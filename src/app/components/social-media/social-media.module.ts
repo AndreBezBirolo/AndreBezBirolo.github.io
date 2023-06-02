@@ -17,4 +17,5 @@ import { FocusTrapModule } from '../../shared/directives/focus-trap/focus-trap.m
     FocusTrapModule
   ]
 })
-export class SocialMediaModule { }
+export class SocialMediaModule {
+}

@@ -6,7 +6,9 @@ import { Directive, OnDestroy, OnInit } from '@angular/core';
 export class FocusBackDirective implements OnInit, OnDestroy {
 
   private lastFocusedElement: Element;
-  constructor() { }
+
+  constructor() {
+  }
 
   public ngOnInit(): void {
     this.lastFocusedElement = document.activeElement;

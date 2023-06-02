@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MenuList } from './menu-list';
 
 @Component({
@@ -6,15 +6,14 @@ import { MenuList } from './menu-list';
   templateUrl: './menu-list.component.html',
   styleUrls: ['./menu-list.component.scss']
 })
-export class MenuListComponent implements OnInit {
+export class MenuListComponent {
 
-  @Input() menuTitle: string = 'Menu';
+  @Input() menuTitle = 'Menu';
   @Input() selectedMenu!: MenuList[];
   @Input() location!: string;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
+
 
 }

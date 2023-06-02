@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { content } from './tools.constant'
+import { content } from './tools.constant';
 import { SwiperOptions } from 'swiper';
 
 @Component({
@@ -27,7 +27,8 @@ export class ToolsComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

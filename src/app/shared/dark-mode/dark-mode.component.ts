@@ -14,7 +14,7 @@ export class DarkModeComponent implements OnInit {
   @Output()
   readonly darkModeSwitched = new EventEmitter<boolean>();
 
-  public checked: boolean = false;
+  public checked = false;
 
   constructor(
     private elementRef: ElementRef

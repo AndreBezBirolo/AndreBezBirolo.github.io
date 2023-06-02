@@ -1,25 +1,25 @@
 <nav
-  aria-label="Menu de redes sociais"
   *ngIf="socialMedias"
-  >
+  aria-label="Menu de redes sociais"
+>
   <ul
     appKeyboardManager
     aria-label="Menu de redes sociais"
-    role="menubar"
-    class="menu-social-list flex end-x-row hide-from-tablet">
+    class="menu-social-list flex end-x-row hide-from-tablet"
+    role="menubar">
     <li
-      role="none"
       *ngFor="let media of socialMedias; let first = first"
-      class="menu-item">
+      class="menu-item"
+      role="none">
       <a
-        appKeyboardManagedItem
         [attr.tabindex]="first ? 0 : -1"
-        role="menuitem"
-        title="{{ media.title }}"
-        target="_blank"
-        rel="external noopener noreferrer"
+        appKeyboardManagedItem
+        class="link d-block"
         href="{{ media.link }}"
-        class="link d-block">
+        rel="external noopener noreferrer"
+        role="menuitem"
+        target="_blank"
+        title="{{ media.title }}">
         <div [innerHTML]="renderIcon(media.iconName)"></div>
       </a>
     </li>

@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ScrollToTopComponent } from './scroll-to-top.component';
 
 
-
 @NgModule({
   declarations: [
     ScrollToTopComponent
@@ -15,4 +14,5 @@ import { ScrollToTopComponent } from './scroll-to-top.component';
     CommonModule
   ]
 })
-export class ScrollToTopModule { }
+export class ScrollToTopModule {
+}

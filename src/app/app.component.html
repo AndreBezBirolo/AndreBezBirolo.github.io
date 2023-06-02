@@ -2,4 +2,4 @@
 <router-outlet></router-outlet>
 <app-footer [copyrightName]="name"></app-footer>
 <app-scroll-to-top></app-scroll-to-top>
-<app-dark-mode [isDarkMode]="isDarkMode" (darkModeSwitched)="switchMode($event)"></app-dark-mode>
+<app-dark-mode (darkModeSwitched)="switchMode($event)" [isDarkMode]="isDarkMode"></app-dark-mode>

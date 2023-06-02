@@ -3,3 +3,4 @@ export interface MenuList {
   link: string;
   title: string;
 }
+

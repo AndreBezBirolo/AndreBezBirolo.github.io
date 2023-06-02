@@ -8,9 +8,9 @@ describe('TrajectoryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TrajectoryComponent ]
+      declarations: [TrajectoryComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

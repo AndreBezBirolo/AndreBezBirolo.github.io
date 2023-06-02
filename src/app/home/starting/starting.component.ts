@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { content } from './starting.constant'
+import { content } from './starting.constant';
 
 @Component({
   selector: 'app-starting',
@@ -10,7 +10,8 @@ export class StartingComponent implements OnInit {
 
   pageContent = content;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

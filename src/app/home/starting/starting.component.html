@@ -9,10 +9,12 @@
         [class.last]="last"
         class="starting-item flex column space-btwn">
       <div class="primary-content">
-        <img class="lazy image margin-auto" width="204" height="160" src="assets/loader_min.svg"
-             data-srcset="assets/img/home/starting/{{ item.imageName }}.png"
+        <img alt="{{ item.alternativeText }}" class="lazy image margin-auto"
              data-src="assets/img/home/starting/{{ item.imageName }}.png"
-             alt="{{ item.alternativeText }}">
+             data-srcset="assets/img/home/starting/{{ item.imageName }}.png"
+             height="160"
+             src="assets/loader_min.svg"
+             width="204">
         <h3 class="title font-l-bold txt-center">{{ item.title }}</h3>
       </div>
       <p class="description txt-center">{{ item.description }}</p>

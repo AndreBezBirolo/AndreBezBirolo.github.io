@@ -3,9 +3,11 @@
   @media(min-width: 799px) {
     margin: 120px auto 60px;
   }
+
   & > .subtitle {
     margin-bottom: 4rem;
   }
+
   .feedback-list {
     .feedback-item {
       flex: 1 0 330px;
@@ -13,6 +15,7 @@
         flex: 0 1 270px;
       }
       margin: 14px;
+
       .content {
         &:after {
           content: "";
@@ -25,6 +28,7 @@
           border-width: 16px 12px 0 12px;
           border-color: var(--color-gray-light) transparent transparent transparent;
         }
+
         box-shadow: 0 30px 40px rgba(var(--color-gray-light), 20%);
         background: var(--color-gray-light);
         border-radius: 10px;
@@ -32,6 +36,7 @@
         position: relative;
         margin-bottom: 30px;
         height: 100%;
+
         .title {
           @media(min-width: 980px) {
             font-size: 2.4rem;
@@ -41,21 +46,25 @@
           line-height: 2.4rem;
           margin-bottom: 8px;
         }
+
         .description {
           font-size: 1.4rem;
           line-height: 2.4rem;
         }
       }
+
       .person-info {
         .image {
           border-radius: 50%;
           margin-bottom: 8px;
         }
+
         .title {
           font-size: 1.8rem;
           line-height: 2.8rem;
           color: var(--color-text);
         }
+
         .subtitle {
           font-size: 1.4rem;
           line-height: 2.4rem;

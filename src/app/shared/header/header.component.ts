@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuList } from '../../components/menu-list/menu-list';
-import menuImported from '../menu.json'
+import menuImported from '../menu.json';
 
 @Component({
   selector: 'app-header',
@@ -9,10 +9,11 @@ import menuImported from '../menu.json'
 })
 export class HeaderComponent implements OnInit {
 
-  isVisible: boolean = true;
+  isVisible = true;
   primaryMenu: MenuList[] = menuImported
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

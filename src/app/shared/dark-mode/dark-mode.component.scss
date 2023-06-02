@@ -9,7 +9,7 @@ input {
   width: 1px;
 }
 
-.dark-mode-button{
+.dark-mode-button {
   z-index: 1;
   cursor: pointer;
   position: fixed;
@@ -18,11 +18,13 @@ input {
   transform: translate3d(0, 70px, 0);
   bottom: 20px;
   right: 88px;
+
   &:hover {
     .svg-fill-p {
       fill: var(--color-s);
     }
   }
+
   &.visible {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);

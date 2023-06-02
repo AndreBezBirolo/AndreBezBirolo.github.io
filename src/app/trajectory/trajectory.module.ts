@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { TrajectoryComponent } from './trajectory.component';
 
 
-
 @NgModule({
   declarations: [
     TrajectoryComponent
@@ -12,4 +11,5 @@ import { TrajectoryComponent } from './trajectory.component';
     CommonModule
   ]
 })
-export class TrajectoryModule { }
+export class TrajectoryModule {
+}

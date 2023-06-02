@@ -25,14 +25,15 @@ import { CallToMeComponent } from './call-to-me/call-to-me.component';
     StartingComponent,
     ToolsComponent,
     FeedbackComponent,
-    CallToMeComponent
+    CallToMeComponent,
   ],
   imports: [
     CommonModule,
     ButtonModule,
     RouterModule,
     NgxUsefulSwiperModule,
-    KeyboardManagerModule
+    KeyboardManagerModule,
   ],
 })
-export class HomeModule { }
+export default class HomeModule {
+}

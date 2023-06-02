@@ -6,7 +6,6 @@ import { SocialMediaModule } from '../components/social-media/social-media.modul
 import { LogoModule } from '../components/logo/logo.module';
 import { MenuListModule } from '../components/menu-list/menu-list.module';
 
-
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -21,6 +20,7 @@ import { MenuListModule } from '../components/menu-list/menu-list.module';
     SocialMediaModule,
     LogoModule,
     MenuListModule,
-  ]
+  ],
 })
-export class SharedModule { }
+export class SharedModule {
+}

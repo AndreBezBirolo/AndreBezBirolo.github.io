@@ -28,16 +28,16 @@ export class ProjectsComponent implements OnInit {
 
   getImage(repo: string) {
     let url;
-    this.image$ = this.projectsService.getRepoImage(repo)
+    this.image$ = this.projectsService.getRepoImage(repo);
     this.image$
       .subscribe(
-      (res) => {
-        if (res.value == 200) {
-          url = res.url
-        }
-      },
-      error => url = 'assets/loader_min.svg')
-    return url
+        (res) => {
+          if (res.value == 200) {
+            url = res.url;
+          }
+        },
+        error => url = 'assets/loader_min.svg');
+    return url;
   }
 
   sanitizeURL(url: string) {

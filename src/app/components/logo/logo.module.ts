@@ -4,7 +4,6 @@ import { LogoComponent } from './logo.component';
 import { RouterModule } from '@angular/router';
 
 
-
 @NgModule({
   declarations: [
     LogoComponent
@@ -17,4 +16,5 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ]
 })
-export class LogoModule { }
+export class LogoModule {
+}

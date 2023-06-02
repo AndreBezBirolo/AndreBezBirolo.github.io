@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { DarkModeComponent } from './dark-mode.component';
 
 
-
 @NgModule({
   declarations: [
     DarkModeComponent
@@ -15,4 +14,5 @@ import { DarkModeComponent } from './dark-mode.component';
     CommonModule
   ]
 })
-export class DarkModeModule { }
+export class DarkModeModule {
+}

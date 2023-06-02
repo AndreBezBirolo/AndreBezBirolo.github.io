@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { content } from './trajectory.constant'
+import { content } from './trajectory.constant';
 
 @Component({
   selector: 'app-trajectory',
@@ -10,7 +10,8 @@ export class TrajectoryComponent implements OnInit {
 
   pageContent = content
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

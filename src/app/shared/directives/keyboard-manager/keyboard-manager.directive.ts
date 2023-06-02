@@ -30,14 +30,14 @@ export class KeyboardManagerDirective {
   public moveFocus(direction: ArrowDirection): KeyboardManagedItemDirective {
     const items = this.items.toArray();
     const currentSelectedIndex = items.findIndex(item => item.isFocused());
-    const targetElementFocus = items[currentSelectedIndex + direction];
+    const targetElementFocus = items[ currentSelectedIndex + direction ];
     if (targetElementFocus) {
       return targetElementFocus;
     }
 
     return direction === ArrowDirection.LEFT
-      ? items[items.length - 1]
-      : items[0];
+      ? items[ items.length - 1 ]
+      : items[ 0 ];
   }
 }
 

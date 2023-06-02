@@ -17,27 +17,33 @@ form textarea {
   -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 form input:focus,
 form textarea:focus {
   border-color: var(--color-s-dark);
   outline: 0;
   box-shadow: var(--input-shadow-color-hover);
 }
+
 form textarea {
   resize: vertical;
 }
+
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: var(--color-text);
 }
+
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   color: var(--color-text);
 }
+
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: var(--color-text);
 }
+
 input::placeholder,
 textarea::placeholder {
   color: var(--color-text);

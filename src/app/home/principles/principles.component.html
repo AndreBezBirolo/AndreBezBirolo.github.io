@@ -12,7 +12,7 @@
       [class.first]="first"
       [class.last]="last"
       class="item-principle flex column center-x-column">
-      <div class="container-image" [innerHTML]="renderIcon(item.svg)">
+      <div [innerHTML]="renderIcon(item.svg)" class="container-image">
       </div>
       <h3 class="title font-e-bold">{{ item.title }}</h3>
       <p class="description txt-center">{{ item.description }}</p>

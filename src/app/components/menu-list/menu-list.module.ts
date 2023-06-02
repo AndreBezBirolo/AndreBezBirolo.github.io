@@ -6,7 +6,6 @@ import { FocusTrapModule } from '../../shared/directives/focus-trap/focus-trap.m
 import { RouterModule } from '@angular/router';
 
 
-
 @NgModule({
   declarations: [
     MenuListComponent
@@ -21,4 +20,5 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ]
 })
-export class MenuListModule { }
+export class MenuListModule {
+}

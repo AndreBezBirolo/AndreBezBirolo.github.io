@@ -5,11 +5,13 @@
   bottom: 20px;
   right: 20px;
   z-index: 3;
+
   &:hover {
     .svg-fill-p {
       fill: var(--color-s);
     }
   }
+
   &.visible {
     opacity: 1;
     transform: translate3d(0, 0, 0);

@@ -1,14 +1,17 @@
 #projects {
   margin: 120px 0 60px 0;
+
   .grid-projects {
     margin: 40px 0;
+
     .project-card {
       text-decoration: none;
       margin: 15px;
       flex: 1 0 200px;
       @media(min-width: 1023px) {
-        flex: 1 0 calc(100%/3 - 35px);
+        flex: 1 0 calc(100% / 3 - 35px);
       }
+
       .title {
         font-size: 2.4rem;
         line-height: 3.2rem;

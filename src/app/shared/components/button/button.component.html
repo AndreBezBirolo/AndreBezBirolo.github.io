@@ -1,10 +1,10 @@
 <a
-  role="button"
-  tabindex="0"
-  [title]="alternativeText"
   [attr.rel]="isExternal ? 'external noopener noreferrer' : null"
   [attr.target]="isExternal ? '_blank' : '_self'"
+  [title]="alternativeText"
+  class="button-primary transition"
   href="{{ link }}"
-  class="button-primary transition">
+  role="button"
+  tabindex="0">
   {{ buttonTitle }}
 </a>

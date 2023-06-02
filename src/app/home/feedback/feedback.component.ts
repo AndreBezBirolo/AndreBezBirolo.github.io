@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { content } from './feedback.constant'
+import { content } from './feedback.constant';
 
 @Component({
   selector: 'app-feedback',
@@ -10,7 +10,8 @@ export class FeedbackComponent implements OnInit {
 
   pageContent = content;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

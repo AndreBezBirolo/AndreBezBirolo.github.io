@@ -9,17 +9,18 @@ export class ScrollToTopComponent implements OnInit {
 
   constructor(
     private elementRef: ElementRef
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
   }
 
   onClick() {
-    window.scroll(0,0);
+    window.scroll(0, 0);
   }
 
   @HostListener('window:scroll', ['$event'])
-  onScroll(): Boolean {
+  onScroll(): boolean {
     return scrollY > 200;
   }
 }

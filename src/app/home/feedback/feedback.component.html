@@ -9,13 +9,13 @@
         <p class="description txt-center">{{item.description}}</p>
       </div>
       <div class="person-info flex column center-x-column">
-        <img width="56"
+        <img alt="{{ item.name }}"
+             class="image lazy"
+             data-src="assets/img/home/feedback/{{ item.photo }}.jpg"
+             data-srcset="assets/img/home/feedback/{{ item.photo }}.jpg"
              height="56"
              src="assets/loader_min.svg"
-             data-srcset="assets/img/home/feedback/{{ item.photo }}.jpg"
-             data-src="assets/img/home/feedback/{{ item.photo }}.jpg"
-             alt="{{ item.name }}"
-             class="image lazy">
+             width="56">
         <h4 class="title txt-center font-l-bold">{{item.name}}</h4>
         <h5 class="subtitle txt-center">{{item.familiarity}}</h5>
       </div>
