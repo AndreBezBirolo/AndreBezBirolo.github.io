@@ -8,9 +8,9 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./tools.component.scss']
 })
 export class ToolsComponent {
-
-  pageContent = content;
-  swiperConfig: SwiperOptions = {
+  // TODO: Criar tipagem para conteúdo da página.
+  public pageContent = content;
+  public swiperConfig: SwiperOptions = {
     loop: true,
     slidesPerView: 2,
     spaceBetween: 10,

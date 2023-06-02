@@ -9,14 +9,94 @@
   }
 
   .container-image {
+
+
+    background-color: var(--color-s);
+    border-radius: 50%;
+    width: 540px;
+    height: 540px;
+    position: relative;
+
+    @media (max-width: 1100px) {
+      width: 50%;
+
+      &:after {
+        right: 45px;
+        bottom: 25px;
+      }
+    }
+
+
+    @media (min-width: 1024px) {
+      &:after {
+        content: url("/assets/img/home/trajectory/trajectory-card.png");
+        right: 72px;
+        bottom: 80px;
+        position: absolute;
+        border-radius: 8px;
+        -webkit-filter: drop-shadow(0px 12px 32px rgba(28, 44, 64, 0.2));
+        filter: drop-shadow(0px 12px 32px rgba(28, 44, 64, 0.2));
+      }
+    }
+
     @media(min-width: 900px) {
       width: 50%;
     }
+
+    @media(max-width: 768px) {
+      width: 60%;
+      margin-bottom: 24px;
+    }
+
+    @media(max-width: 620px) {
+      width: 80%;
+      height: 350px;
+    }
+
+    @media (max-width: 420px) {
+      width: 100%;
+
+      .primary-image {
+        width: 70%;
+        height: auto;
+      }
+    }
+
+    .primary-image {
+      position: absolute;
+      top: 69px;
+      left: 63px;
+      width: auto;
+      border-radius: 8px;
+
+
+    }
+
+    @media (max-width: 1024px) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 400px;
+
+      .primary-image {
+        position: relative;
+        top: unset;
+        left: unset;
+      }
+    }
   }
+
 
   .container-content {
     @media(min-width: 900px) {
       width: 50%;
+      margin: 0 48px;
     }
 
     .sub-title {

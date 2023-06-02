@@ -1,22 +1,20 @@
-import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-scroll-to-top',
   templateUrl: './scroll-to-top.component.html',
   styleUrls: ['./scroll-to-top.component.scss']
 })
-export class ScrollToTopComponent implements OnInit {
+export class ScrollToTopComponent {
 
   constructor(
-    private elementRef: ElementRef
+    private viewportScroller: ViewportScroller
   ) {
   }
 
-  ngOnInit(): void {
-  }
-
-  onClick() {
-    window.scroll(0, 0);
+  public onClick(): void {
+    this.viewportScroller.scrollToPosition([0, 0]);
   }
 
   @HostListener('window:scroll', ['$event'])

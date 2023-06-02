@@ -11,10 +11,10 @@ import { environment } from '../../../../environments/environment';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
-
+  // TODO: Refatorar toda a parte de projetos.
   public repositorios$ = this.projectsService.listRepos();
   public image$!: Observable<any>;
-  github_link = environment.GITHUB_LINK;
+  public github_link = environment.GITHUB_LINK;
 
 
   constructor(

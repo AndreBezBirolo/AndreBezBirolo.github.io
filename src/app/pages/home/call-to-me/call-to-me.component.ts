@@ -1,16 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-call-to-me',
   templateUrl: './call-to-me.component.html',
   styleUrls: ['./call-to-me.component.scss']
 })
-export class CallToMeComponent implements OnInit {
-
+export class CallToMeComponent {
   constructor() {
   }
-
-  ngOnInit(): void {
-  }
-
 }

@@ -7,8 +7,8 @@ import { content } from './trajectory.constant';
   styleUrls: ['./trajectory.component.scss']
 })
 export class TrajectoryComponent {
-
-  pageContent = content
+  // TODO: Criar tipagem para o conteúdo da página.
+  public pageContent = content
 
   constructor() {
   }

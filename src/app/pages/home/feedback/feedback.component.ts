@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { content } from './feedback.constant';
 
 @Component({
@@ -6,14 +6,11 @@ import { content } from './feedback.constant';
   templateUrl: './feedback.component.html',
   styleUrls: ['./feedback.component.scss']
 })
-export class FeedbackComponent implements OnInit {
-
-  pageContent = content;
+export class FeedbackComponent {
+  // TODO: Criar tipagem para o conteúdo da página.
+  public pageContent = content;
 
   constructor() {
-  }
-
-  ngOnInit(): void {
   }
 
 }
