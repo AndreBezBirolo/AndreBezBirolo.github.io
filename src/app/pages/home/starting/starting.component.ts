@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { content } from './starting.constant';
+import { startingContent } from '../content.constant';
 
 @Component({
   selector: 'app-starting',
@@ -8,7 +8,7 @@ import { content } from './starting.constant';
 })
 export class StartingComponent {
   // TODO: Criar tipagem para conteúdo da página.
-  public pageContent = content;
+  public content = startingContent;
 
   constructor() {
   }

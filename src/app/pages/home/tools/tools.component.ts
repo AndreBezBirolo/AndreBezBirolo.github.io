@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { content } from './tools.constant';
 import { SwiperOptions } from 'swiper';
+import { toolsContent } from '../content.constant';
 
 @Component({
   selector: 'app-tools',
@@ -9,7 +9,7 @@ import { SwiperOptions } from 'swiper';
 })
 export class ToolsComponent {
   // TODO: Criar tipagem para conteúdo da página.
-  public pageContent = content;
+  public content = toolsContent;
   public swiperConfig: SwiperOptions = {
     loop: true,
     slidesPerView: 2,

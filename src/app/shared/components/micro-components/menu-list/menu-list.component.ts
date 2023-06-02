@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MenuList } from './menu-list';
+import { IMenuList } from './menu-list.interface';
 
 @Component({
   selector: 'app-menu-list',
@@ -8,9 +8,9 @@ import { MenuList } from './menu-list';
 })
 export class MenuListComponent {
 
-  @Input() menuTitle = 'Menu';
-  @Input() selectedMenu!: MenuList[];
-  @Input() location!: string;
+  @Input() public menuTitle = 'Menu';
+  @Input() public selectedMenu!: IMenuList[];
+  @Input() public location!: string;
 
   constructor() {
   }

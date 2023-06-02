@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { content } from './principles.constant';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { principlesContent } from '../content.constant';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 })
 export class PrinciplesComponent {
   // TODO: Criar tipagem para conteúdo da página.
-  public pageContent = content;
+  public content = principlesContent;
 
   constructor(private sanitizer: DomSanitizer) {
   }

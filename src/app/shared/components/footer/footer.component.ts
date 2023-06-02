@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import menuImported from '../../menu.json';
-import { MenuList } from '../micro-components/menu-list/menu-list';
+import { IMenuList } from '../micro-components/menu-list/menu-list.interface';
 
 
 @Component({
@@ -10,9 +10,9 @@ import { MenuList } from '../micro-components/menu-list/menu-list';
 })
 export class FooterComponent {
 
-  primaryMenu: MenuList[] = menuImported
+  public primaryMenu: IMenuList[] = menuImported
   @Input() copyrightName!: string;
-  year: number = (new Date()).getFullYear();
+  public year: number = (new Date()).getFullYear();
 
   constructor() {
   }

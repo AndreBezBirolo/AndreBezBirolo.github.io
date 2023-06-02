@@ -1,8 +1,8 @@
-<section *ngIf="pageContent.feedback.length != 0" class="container" id="feedback">
-  <h2 class="title font-e-bold txt-center">{{ pageContent.title }}</h2>
-  <p class="subtitle txt-center">{{ pageContent.subtitle }}</p>
+<section *ngIf="content.feedback.length != 0" class="container" id="feedback">
+  <h2 class="title font-e-bold txt-center">{{ content.title }}</h2>
+  <p class="subtitle txt-center">{{ content.subtitle }}</p>
   <div class="feedback-list flex wrap">
-    <div *ngFor="let item of pageContent.feedback"
+    <div *ngFor="let item of content.feedback"
          class="feedback-item flex column">
       <div class="content">
         <h3 class="title font-l-bold txt-center">...{{item.title}}...</h3>

@@ -1,14 +1,14 @@
 <section
-  *ngIf="pageContent.principles.length > 0"
+  *ngIf="content.principles.length > 0"
   class="container"
   id="principles">
   <h2 class="title font-e-bold txt-center">
-    {{ pageContent.title }}
+    {{ content.title }}
   </h2>
   <ul
     class="container-principles flex center-x-row wrap">
     <li
-      *ngFor="let item of pageContent.principles; let first = first; let last = last"
+      *ngFor="let item of content.principles; let first = first; let last = last"
       [class.first]="first"
       [class.last]="last"
       class="item-principle flex column center-x-column">

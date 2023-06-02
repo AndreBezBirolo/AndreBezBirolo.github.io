@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Projects } from './projects';
+import { IProjects } from './projects.interface';
 import { environment } from '../../../../environments/environment';
 
 const API = environment.API_GITHUB_REPO;
@@ -17,7 +17,7 @@ export class ProjectsService {
 
   listRepos() {
     return this.http
-      .get<Projects[]>(`${API}?sort=created&per_page=6`);
+      .get<IProjects[]>(`${API}?sort=created&per_page=6`);
   }
 
   getRepoImage(repo: string) {

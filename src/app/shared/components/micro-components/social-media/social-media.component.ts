@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SocialMedia } from './social-media';
+import { ISocialMedia } from './social-media.interface';
 import { content } from './social-media.constant';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
@@ -9,7 +9,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
   styleUrls: ['./social-media.component.scss']
 })
 export class SocialMediaComponent {
-  socialMedias: SocialMedia[] = content;
+  public socialMedias: ISocialMedia[] = content;
 
   constructor(
     private sanitizer: DomSanitizer

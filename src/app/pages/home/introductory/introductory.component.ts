@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { content } from './introductory.constant';
+import { introductoryContent } from '../content.constant';
 
 @Component({
   selector: 'app-introductory',
@@ -9,7 +9,7 @@ import { content } from './introductory.constant';
 export class IntroductoryComponent {
 
   // TODO: Criar tipagem para conteúdo do site.
-  public mockup = content;
+  public content = introductoryContent;
 
   constructor() {
   }

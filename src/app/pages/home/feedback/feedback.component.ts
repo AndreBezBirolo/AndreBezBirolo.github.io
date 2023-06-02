@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { content } from './feedback.constant';
+import { feedbackContent } from '../content.constant';
 
 @Component({
   selector: 'app-feedback',
@@ -8,7 +8,7 @@ import { content } from './feedback.constant';
 })
 export class FeedbackComponent {
   // TODO: Criar tipagem para o conteúdo da página.
-  public pageContent = content;
+  public content = feedbackContent;
 
   constructor() {
   }

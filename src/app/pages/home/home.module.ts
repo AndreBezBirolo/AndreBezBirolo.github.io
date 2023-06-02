@@ -35,7 +35,7 @@ import { ButtonModule } from '../../shared/components/button/button.module';
     KeyboardManagerModule,
     LazyLoadImageModule,
     ButtonModule
-  ],
+  ]
 })
 export default class HomeModule {
 }

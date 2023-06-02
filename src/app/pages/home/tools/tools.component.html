@@ -1,10 +1,10 @@
-<section *ngIf="pageContent.tools.length != 0"
+<section *ngIf="content.tools.length != 0"
          class="container"
          id="tools">
-  <h2 class="title font-e-bold txt-center">{{ pageContent.title }}</h2>
+  <h2 class="title font-e-bold txt-center">{{ content.title }}</h2>
   <swiper [config]="swiperConfig">
     <ul class="swiper-wrapper tools-list">
-      <li *ngFor="let item of pageContent.tools"
+      <li *ngFor="let item of content.tools"
           class="swiper-slide tool-item">
         <img alt="{{ item.alternativeText }}"
              class="image margin-auto lazy"

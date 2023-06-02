@@ -1,10 +1,10 @@
 <section class="container" id="starting">
   <h2 class="title font-e-bold txt-center">
-    {{ pageContent.title }}
+    {{ content.title }}
   </h2>
-  <ul *ngIf="pageContent.steps.length != 0"
+  <ul *ngIf="content.steps.length != 0"
       class="starting-list wrap flex center-x-row">
-    <li *ngFor="let item of pageContent.steps; let first = first; let last = last"
+    <li *ngFor="let item of content.steps; let first = first; let last = last"
         [class.first]="first"
         [class.last]="last"
         class="starting-item flex column space-btwn">

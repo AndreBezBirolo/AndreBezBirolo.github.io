@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import menuImported from '../../menu.json';
-import { MenuList } from '../micro-components/menu-list/menu-list';
+import { IMenuList } from '../micro-components/menu-list/menu-list.interface';
 
 @Component({
   selector: 'app-header',
@@ -9,8 +9,7 @@ import { MenuList } from '../micro-components/menu-list/menu-list';
 })
 export class HeaderComponent {
 
-  isVisible = true;
-  primaryMenu: MenuList[] = menuImported
+  public primaryMenu: IMenuList[] = menuImported
 
   constructor() {
   }
