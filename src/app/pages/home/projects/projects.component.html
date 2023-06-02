@@ -1,0 +1,37 @@
+<section
+  *ngIf="(repositorios$ | async) as projects"
+  class="container flex column center-x-column"
+  id="projects">
+  <h2 class="title font-e-bold txt-center">Projetos recentes.</h2>
+  <div
+    appKeyboardManager
+    class="grid-projects flex center-x-row wrap"
+    role="listbox">
+    <a
+      *ngFor="let project of projects;"
+      [href]="project.html_url"
+      appKeyboardManagedItem
+      class="project-card"
+      rel="noopener noreferrer"
+      role="listitem"
+      target="_blank"
+      title="Ir para o projeto {{ project.name }}">
+      <img alt
+           class="image lazy"
+           defaultImage="assets/img/loader_min.svg"
+           height="350"
+           lazyLoad="assets/img/projects/gocorona.jpg"
+           width="350">
+      <div class="content">
+        <h3 class="title font-bold">{{ project.name }}</h3>
+        <p class="description">{{ project.description }}</p>
+      </div>
+    </a>
+  </div>
+  <app-button
+    [isExternal]="true"
+    [link]="github_link"
+    alternativeText="Ir para a página de projetos no github do André."
+    buttonTitle="Ver todos os projetos">
+  </app-button>
+</section>

@@ -1,0 +1,32 @@
+@import '_variables.scss';
+
+header {
+  padding: 14px 0;
+  background: var(--color-white);
+  box-shadow: 0 2px 4px -2px rgb(2 3 6 / 12%), 0px 4px 4px -2px rgb(0 0 0 / 8%);
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1920px;
+
+  &.up {
+    transform: translate3d(0, -88px, 0);
+  }
+
+  app-menu-list {
+    width: 30%;
+
+  }
+
+  app-logo {
+    width: 40%;
+  }
+
+  app-social-media {
+    width: 30%;
+  }
+}
+

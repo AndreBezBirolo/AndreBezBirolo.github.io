@@ -3,13 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
-import { ErrorsModule } from './errors/errors.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ScrollToTopModule } from './shared/scroll-to-top/scroll-to-top.module';
-import { DarkModeModule } from './shared/dark-mode/dark-mode.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import HomeModule from './home/home.module';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { ScrollToTopModule } from './shared/components/scroll-to-top-button/scroll-to-top.module';
+import HomeModule from './pages/home/home.module';
+import { ErrorsModule } from './shared/views/errors/errors.module';
+import { DarkModeModule } from './shared/components/dark-mode-button/dark-mode.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import HomeModule from './home/home.module';
     HomeModule,
     ScrollToTopModule,
     DarkModeModule,
-    HttpClientModule
+    HttpClientModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [
