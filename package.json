@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href='/andre-j-bez-birolo/' && angular-cli-ghpages --dir=dist/andre-j-bez-birolo",
+    "build": "ng build --base-href=/AndreBezBirolo.github.io/ && angular-cli-ghpages --dir=dist/andre-j-bez-birolo",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
