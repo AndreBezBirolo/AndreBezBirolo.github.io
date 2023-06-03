@@ -11,8 +11,7 @@
     <p class="sub-title font-bold font-uppercase">{{ pageContent.subtitle }}</p>
     <h2 class="title font-bold">{{ pageContent.title }}</h2>
     <p class="description">{{ pageContent.description }}</p>
-    <a [routerLink]="['/trajectory']"
-       class="font-bold flex center-y-row go-to-page"
+    <a *ngIf="false" [routerLink]="['/trajectory']" class="font-bold flex center-y-row go-to-page"
        title="Ir para a página de trajetória de André Bez Birolo">
       {{ pageContent.buttonText }}
       <svg class="arrow-icon transition" fill="none" height="14" viewBox="0 0 22 14" width="22"

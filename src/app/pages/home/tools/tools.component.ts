@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { SwiperOptions } from 'swiper';
+import { Lazy, Swiper, SwiperOptions } from 'swiper';
 import { toolsContent } from '../content.constant';
+
+Swiper.use([Lazy]);
 
 @Component({
   selector: 'app-tools',
@@ -10,7 +12,7 @@ import { toolsContent } from '../content.constant';
 export class ToolsComponent {
   public content = toolsContent;
   public swiperConfig: SwiperOptions = {
-    loop: true,
+    loop: false,
     slidesPerView: 2,
     spaceBetween: 10,
     pagination: {
