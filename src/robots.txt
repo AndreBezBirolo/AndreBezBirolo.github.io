@@ -1,0 +1,6 @@
+# robots.txt gerado em
+# devtools.com.br/gerador-de-robots-txt/
+Sitemap: https://andrebezbirolo.github.io/sitemap.xml
+User-agent: *
+Disallow:
+Disallow: /assets
