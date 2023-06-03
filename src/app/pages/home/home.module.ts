@@ -15,7 +15,6 @@ import { CallToMeComponent } from './call-to-me/call-to-me.component';
 import { KeyboardManagerModule } from '../../shared/directives/keyboard-manager/keyboard-manager.module';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { ButtonModule } from '../../shared/components/button/button.module';
-import { ImgFallbackModule } from 'ngx-img-fallback';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PhoneMaskModule } from '../../shared/directives/phone-mask/phone-mask.module';
 import { TypewriterComponent } from '../../shared/components/typewriter/typewriter.component';
@@ -40,7 +39,6 @@ import { TypewriterComponent } from '../../shared/components/typewriter/typewrit
     KeyboardManagerModule,
     LazyLoadImageModule,
     ButtonModule,
-    ImgFallbackModule,
     ReactiveFormsModule,
     PhoneMaskModule,
   ]

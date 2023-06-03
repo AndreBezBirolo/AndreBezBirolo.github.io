@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TrajectoryComponent } from './pages/trajectory/trajectory.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './shared/views/errors/not-found/not-found.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const routes: Routes = [
   {
@@ -43,6 +44,9 @@ const routes: Routes = [
   ],
   exports: [
     RouterModule
+  ],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ]
 })
 export class AppRoutingModule {
