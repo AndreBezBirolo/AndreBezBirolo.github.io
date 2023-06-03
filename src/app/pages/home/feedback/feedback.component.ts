@@ -7,7 +7,6 @@ import { feedbackContent } from '../content.constant';
   styleUrls: ['./feedback.component.scss']
 })
 export class FeedbackComponent {
-  // TODO: Criar tipagem para o conteúdo da página.
   public content = feedbackContent;
 
   constructor() {

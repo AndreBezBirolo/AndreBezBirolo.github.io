@@ -8,7 +8,6 @@ import { toolsContent } from '../content.constant';
   styleUrls: ['./tools.component.scss']
 })
 export class ToolsComponent {
-  // TODO: Criar tipagem para conteúdo da página.
   public content = toolsContent;
   public swiperConfig: SwiperOptions = {
     loop: true,

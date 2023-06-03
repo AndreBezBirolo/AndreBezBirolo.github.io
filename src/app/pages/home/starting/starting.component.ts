@@ -7,7 +7,6 @@ import { startingContent } from '../content.constant';
   styleUrls: ['./starting.component.scss']
 })
 export class StartingComponent {
-  // TODO: Criar tipagem para conteúdo da página.
   public content = startingContent;
 
   constructor() {

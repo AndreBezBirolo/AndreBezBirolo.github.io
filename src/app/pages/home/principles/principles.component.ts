@@ -9,7 +9,6 @@ import { principlesContent } from '../content.constant';
   styleUrls: ['./principles.component.scss']
 })
 export class PrinciplesComponent {
-  // TODO: Criar tipagem para conteúdo da página.
   public content = principlesContent;
 
   constructor(private sanitizer: DomSanitizer) {

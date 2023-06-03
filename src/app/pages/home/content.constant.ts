@@ -1,4 +1,12 @@
-export const feedbackContent = {
+import {
+  IFeedbackContent,
+  IIntroductoryContent,
+  IPrinciplesContent,
+  IStartingContent,
+  IToolsContent
+} from './content.interface';
+
+export const feedbackContent: IFeedbackContent = {
   title: 'Feedback sobre o meu trabalho.',
   subtitle: 'Comentários de alguns colegas de trabalho e clientes.',
   feedback: [
@@ -25,7 +33,7 @@ export const feedbackContent = {
     }
   ]
 };
-export const introductoryContent = {
+export const introductoryContent: IIntroductoryContent = {
   title: 'Desenvolvedor Front - End.',
   description: 'Especializado em websites de alta performance com excelentes diferenciais como forte trabalho em SEO e semântica estrutural.',
   button: {
@@ -40,7 +48,7 @@ export const introductoryContent = {
     alt: 'Foto do desenvolvedor WEB André J. Bez Birolo.',
   }
 };
-export const principlesContent = {
+export const principlesContent: IPrinciplesContent = {
   title: 'Meus princípios',
   principles: [
     {
@@ -65,7 +73,7 @@ export const principlesContent = {
     }
   ]
 };
-export const startingContent = {
+export const startingContent: IStartingContent = {
   title: 'Comecei o projeto, e agora?',
   steps: [
     {
@@ -89,7 +97,7 @@ export const startingContent = {
   ]
 };
 // TODO: Atualizar as ferramentas utilizadas.
-export const toolsContent = {
+export const toolsContent: IToolsContent = {
   title: 'Ferramentas utilizadas',
   tools: [
     {

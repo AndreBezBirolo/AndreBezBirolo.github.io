@@ -5,7 +5,6 @@
 export const environment = {
   production: false,
   GITHUB_BASE_URL: 'https://api.github.com/',
-  ACCESS_TOKEN: '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',
   GITHUB_IMAGE_URL: 'https://raw.githubusercontent.com/AndreBezBirolo/',
   LINKEDIN_LINK: 'https://www.linkedin.com/in/andre-jbb/',
   YOUTUBE_LINK: 'https://www.youtube.com/channel/UCeRfhBW4-fgxUmO-v9bOt2Q',
