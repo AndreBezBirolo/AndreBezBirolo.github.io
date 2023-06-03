@@ -15,6 +15,7 @@ import { CallToMeComponent } from './call-to-me/call-to-me.component';
 import { KeyboardManagerModule } from '../../shared/directives/keyboard-manager/keyboard-manager.module';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { ButtonModule } from '../../shared/components/button/button.module';
+import { ImgFallbackModule } from 'ngx-img-fallback';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ButtonModule } from '../../shared/components/button/button.module';
     NgxUsefulSwiperModule,
     KeyboardManagerModule,
     LazyLoadImageModule,
-    ButtonModule
+    ButtonModule,
+    ImgFallbackModule
   ]
 })
 export default class HomeModule {

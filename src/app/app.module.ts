@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import HomeModule from './pages/home/home.module';
 import { ErrorsModule } from './shared/views/errors/errors.module';
@@ -14,6 +14,7 @@ import { MenuListModule } from './shared/components/micro-components/menu-list/m
 import { LogoModule } from './shared/components/micro-components/logo/logo.module';
 import { SocialMediaModule } from './shared/components/micro-components/social-media/social-media.module';
 import { ScrollToTopModule } from './shared/components/micro-components/scroll-to-top-button/scroll-to-top.module';
+import { ErrorInterceptor } from './shared/interceptors/error.interceptor';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,13 @@ import { ScrollToTopModule } from './shared/components/micro-components/scroll-t
     LogoModule,
     SocialMediaModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: ErrorInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [
     AppComponent
   ]

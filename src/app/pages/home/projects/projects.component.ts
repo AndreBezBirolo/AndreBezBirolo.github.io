@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ProjectsService } from './projects.service';
 import { DomSanitizer } from '@angular/platform-browser';
-import { Observable } from 'rxjs';
 import { environment } from '../../../../environments/environment';
 
 
@@ -12,34 +11,12 @@ import { environment } from '../../../../environments/environment';
 })
 export class ProjectsComponent {
   // TODO: Refatorar toda a parte de projetos.
-  public repositorios$ = this.projectsService.listRepos();
-  public image$!: Observable<any>;
+  public repositorios$ = this.projectsService.getRepositories();
   public github_link = environment.GITHUB_LINK;
-
 
   constructor(
     private projectsService: ProjectsService,
     private sanitization: DomSanitizer
   ) {
   }
-
-
-  getImage(repo: string) {
-    let url;
-    this.image$ = this.projectsService.getRepoImage(repo);
-    this.image$
-      .subscribe(
-        (res) => {
-          if (res.value == 200) {
-            url = res.url;
-          }
-        },
-        error => url = 'assets/img/loader_min.svg');
-    return url;
-  }
-
-  sanitizeURL(url: string) {
-    return this.sanitization.bypassSecurityTrustUrl((url));
-  }
-
 }

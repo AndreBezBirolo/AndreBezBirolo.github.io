@@ -17,6 +17,16 @@
         line-height: 3.2rem;
         margin-bottom: 8px;
       }
+
+      .image {
+        width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        max-width: 350px;
+        max-height: 350px;
+      }
     }
   }
 }
