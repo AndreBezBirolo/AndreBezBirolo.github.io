@@ -14,7 +14,7 @@ export class ProjectsService {
   }
 
   public async getRepositories(): Promise<IProject[]> {
-    const repositoriesList$ = this.http.get<IProjectDTO[]>(environment.github_base_url + 'users/AndreBezBirolo/repos?sort=created&per_page=6&page=1');
+    const repositoriesList$ = this.http.get<IProjectDTO[]>(environment.GITHUB_BASE_URL + 'users/AndreBezBirolo/repos?sort=created&per_page=6&page=1');
 
     return await lastValueFrom(repositoriesList$)
       .then(async (data: IProjectDTO[]) => {
@@ -42,12 +42,12 @@ export class ProjectsService {
 
   private async getImage(repo: string, index: number): Promise<string> {
     try {
-      const response = await firstValueFrom(this.http.get(environment.github_image_url + repo + '/main/preview.jpg', {
+      const response = await firstValueFrom(this.http.get(environment.GITHUB_IMAGE_URL + repo + '/main/preview.jpg', {
         observe: 'response',
         responseType: 'blob'
       }));
       if (response.ok && response.body && response.body.type.startsWith('image/')) {
-        return environment.github_image_url + repo + '/main/preview.jpg';
+        return environment.GITHUB_IMAGE_URL + repo + '/main/preview.jpg';
       } else {
         if (index % 2 === 0) {
           return 'assets/img/projects/script-green.jpg';
