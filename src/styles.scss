@@ -233,9 +233,18 @@ img {
   font-weight: 700;
   font-size: 2rem;
   line-height: 3rem;
-  font-feature-settings: "liga" off
+  font-feature-settings: "liga" off;
+
+  &:not(.disabled) {
+    cursor: pointer;
+  }
+
+  &.disabled {
+    background-color: var(--selection-color);
+    opacity: 0.3;
+  }
 }
 
-.button-primary:hover {
+.button-primary:not(.disabled):hover {
   background: var(--color-s-dark)
 }

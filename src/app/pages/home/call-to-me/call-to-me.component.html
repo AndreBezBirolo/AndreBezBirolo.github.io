@@ -1,35 +1,38 @@
 <section class="container" id="call-to-me">
   <h2 class="title font-e-bold txt-center">Entre em contato comigo<br> rapidamente rápido!</h2>
   <div class="form-container">
-    <!-- TODO: Implementar formulário reativo-->
-    <form action="https://send.pageclip.co/QGXN2cowdDZ3LKuG4J1rE4M5lEg0Wjc1/Entre-Em-Contato"
+    <!-- TODO: Implementar mensagem de erro nos campos -->
+    <form [formGroup]="form" action="https://send.pageclip.co/QGXN2cowdDZ3LKuG4J1rE4M5lEg0Wjc1/Entre-Em-Contato"
           class="pageclip-form flex wrap" method="post">
       <div class="grouped-itens flex space-btwn">
         <label class="flex column flex-1" for="name">
           Nome:
-          <input id="name" name="name" placeholder="Digite seu nome" required type="text"/>
+          <input formControlName="name" id="name" name="name" placeholder="Digite seu nome" required type="text"/>
         </label>
         <label class="flex column flex-1" for="email">
           E-mail:
-          <input id="email" name="email" placeholder="Digite seu e-mail" required type="text"/>
+          <input formControlName="email" id="email" name="email" placeholder="Digite seu e-mail" required type="text"/>
         </label>
       </div>
       <label class="flex column" for="whatsapp">
         Whatsapp:
         <!-- TODO: Implementar validação de telefone -->
-        <input id="whatsapp" name="whatsapp" placeholder="Digite seu Whatsapp"
-               required type="text"/>
+        <input formControlName="whatsapp" id="whatsapp" name="whatsapp" placeholder="Digite seu Whatsapp"
+               type="text"/>
       </label>
       <label class="flex column" for="subject">
         Assunto:
-        <input id="subject" name="subject" placeholder="Qual o assunto?" required type="text"/>
+        <input formControlName="subject" id="subject" name="subject" placeholder="Qual o assunto?" required
+               type="text"/>
       </label>
       <label class="flex column " for="textarea">
         Deseja fazer alguma observação?
-        <textarea cols="30" id="textarea" name="textarea" placeholder="Sinta-se livre aqui."
+        <textarea cols="30" formControlName="observation" id="textarea" name="textarea"
+                  placeholder="Sinta-se livre aqui."
                   rows="10"></textarea>
       </label>
-      <button class="transition button-primary pageclip-form__submit" type="submit">
+      <button [disabled]="form.invalid" [ngClass]="form.invalid ? 'disabled' : ''"
+              class="transition button-primary pageclip-form__submit" type="submit">
         <span>Enviar</span>
       </button>
     </form>

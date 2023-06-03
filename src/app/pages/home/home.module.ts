@@ -16,6 +16,7 @@ import { KeyboardManagerModule } from '../../shared/directives/keyboard-manager/
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { ButtonModule } from '../../shared/components/button/button.module';
 import { ImgFallbackModule } from 'ngx-img-fallback';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ImgFallbackModule } from 'ngx-img-fallback';
     KeyboardManagerModule,
     LazyLoadImageModule,
     ButtonModule,
-    ImgFallbackModule
+    ImgFallbackModule,
+    ReactiveFormsModule
   ]
 })
 export default class HomeModule {
