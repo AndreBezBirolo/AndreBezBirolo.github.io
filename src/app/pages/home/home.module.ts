@@ -18,6 +18,7 @@ import { ButtonModule } from '../../shared/components/button/button.module';
 import { ImgFallbackModule } from 'ngx-img-fallback';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PhoneMaskModule } from '../../shared/directives/phone-mask/phone-mask.module';
+import { TypewriterComponent } from '../../shared/components/typewriter/typewriter.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PhoneMaskModule } from '../../shared/directives/phone-mask/phone-mask.m
     ProjectsComponent,
     StartingComponent,
     ToolsComponent,
-    TrajectoryComponent
+    TrajectoryComponent,
+    TypewriterComponent
   ],
   imports: [
     CommonModule,
@@ -40,7 +42,7 @@ import { PhoneMaskModule } from '../../shared/directives/phone-mask/phone-mask.m
     ButtonModule,
     ImgFallbackModule,
     ReactiveFormsModule,
-    PhoneMaskModule
+    PhoneMaskModule,
   ]
 })
 export default class HomeModule {

@@ -1,0 +1,29 @@
+.typewriter {
+  &:after {
+    content: "|";
+    -webkit-animation: blink 0.75s infinite;
+    animation: blink 0.75s infinite;
+  }
+}
+
+@-webkit-keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+

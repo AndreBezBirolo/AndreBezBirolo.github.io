@@ -1,6 +1,6 @@
 <section class="flex center-y-row" id="introdutory">
   <div class="container-text">
-    <h1 class="title font-e-bold">{{ content.title }}</h1>
+    <app-typewriter [message]="content.title" classes="title font-e-bold"></app-typewriter>
     <p class="description">{{ content.description }}</p>
     <app-button
       *ngIf="content.button.haveButton"
