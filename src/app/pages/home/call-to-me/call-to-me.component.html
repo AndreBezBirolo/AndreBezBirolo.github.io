@@ -16,8 +16,8 @@
       </div>
       <label class="flex column" for="whatsapp">
         Whatsapp:
-        <!-- TODO: Implementar validação de telefone -->
-        <input formControlName="whatsapp" id="whatsapp" name="whatsapp" placeholder="Digite seu Whatsapp"
+        <input appPhoneMask formControlName="whatsapp" id="whatsapp" maxlength="15" name="whatsapp"
+               placeholder="Digite seu Whatsapp"
                type="text"/>
       </label>
       <label class="flex column" for="subject">
